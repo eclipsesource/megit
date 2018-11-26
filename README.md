@@ -6,6 +6,7 @@ This made us think... wouldn't EGit be a great git standalone tool if it would b
 
 That's exactly what *MeGit* is: a minimal standalone application that contains just enough to run EGit conveniently.
 
+![Screenshot of MeGit](doc/megit-screenshot.png)
 
 # Features
 
