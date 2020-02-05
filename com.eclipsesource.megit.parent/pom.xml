@@ -9,17 +9,14 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<tycho-version>1.2.0</tycho-version>
-		<tycho-extras-version>1.2.0</tycho-extras-version>
+		<tycho-version>1.6.0</tycho-version>
+		<tycho-extras-version>1.6.0</tycho-extras-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		
 		<mav-checkstyle-version>3.0.0</mav-checkstyle-version>
 		<checkstyle-version>8.8</checkstyle-version>
-		
-		<ecore.version>2.15.0</ecore.version>
-		<xtend.version>2.15.0</xtend.version>
 	</properties>
 
 	<pluginRepositories>
@@ -75,29 +72,13 @@
 						<environment>
 							<os>win32</os>
 							<ws>win32</ws>
-							<arch>x86</arch>
-						</environment>
-						<environment>
-							<os>win32</os>
-							<ws>win32</ws>
 							<arch>x86_64</arch>
-						</environment>
-						<environment>
-							<os>linux</os>
-							<ws>gtk</ws>
-							<arch>x86</arch>
 						</environment>
 						<environment>
 							<os>linux</os>
 							<ws>gtk</ws>
 							<arch>x86_64</arch>
 						</environment>
-						<!--  Beginning with mars this environment is removed -->
-						<!--environment>
-							<os>macosx</os>
-							<ws>cocoa</ws>
-							<arch>x86</arch>
-						</environment-->
 						<environment>
 							<os>macosx</os>
 							<ws>cocoa</ws>
@@ -140,33 +121,6 @@
 					</sourceReferences>
 					 -->
 				</configuration>
-			</plugin>
-			<!-- to disable use -Dcheckstyle.skip -->
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-				<version>${mav-checkstyle-version}</version>
-				<!-- https://maven.apache.org/plugins/maven-checkstyle-plugin/history.html -->
-				<configuration>
-					<configLocation>checkstyle/esmCheckstyle.xml</configLocation>
-                    <excludes>**/xtend/**/*</excludes>
-					<failsOnError>false</failsOnError>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>check</goal>
-						</goals>
-						<phase>verify</phase>
-					</execution>
-				</executions>
-				<dependencies>
-					<dependency>
-						<groupId>com.puppycrawl.tools</groupId>
-						<artifactId>checkstyle</artifactId>
-						<version>${checkstyle-version}</version>
-					</dependency>
-				</dependencies>
 			</plugin>
 
 			<!-- enable source bundle generation -->

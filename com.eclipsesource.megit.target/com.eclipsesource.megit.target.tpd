@@ -1,25 +1,27 @@
 target "MeGit Target"
 with allEnvironments source
-location "http://download.eclipse.org/releases/latest/" {
+location "http://download.eclipse.org/releases/2019-12/" {
 	org.eclipse.jgit.feature.group
+	org.eclipse.jgit.http.apache.feature.group
+	org.eclipse.jgit.ssh.apache.feature.group
 	org.eclipse.egit.feature.group
 	org.eclipse.egit.gitflow.feature.feature.group
 	org.eclipse.emf.sdk.feature.group
 	org.eclipse.emf.transaction.feature.group
 	org.eclipse.emf.validation.feature.group
-}
-location "http://download.eclipse.org/eclipse/updates/4.9/" {
 	org.eclipse.platform.ide
+	org.eclipse.equinox.p2.rcp.feature.feature.group
 	org.eclipse.equinox.sdk.feature.group
+	org.eclipse.equinox.core.feature.feature.group
 	org.eclipse.equinox.p2.discovery.feature.feature.group
+	org.eclipse.equinox.executable.feature.group
 	org.eclipse.ecf.core.feature.feature.group
 	org.eclipse.ecf.core.ssl.feature.feature.group
 	org.eclipse.ecf.filetransfer.feature.feature.group
-	org.eclipse.ecf.filetransfer.httpclient4.feature.feature.group
-	org.eclipse.ecf.filetransfer.httpclient4.ssl.feature.feature.group
+	org.eclipse.ecf.filetransfer.httpclient45.feature.feature.group
 	org.eclipse.ecf.filetransfer.ssl.feature.feature.group
 }
-location "http://download.eclipse.org/tools/orbit/downloads/drops/R20180905201904/repository" {
+location "http://download.eclipse.org/tools/orbit/downloads/drops/R20191126223242/repository" {
 	com.google.guava
 	com.google.gson
 }
