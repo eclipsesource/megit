@@ -25,7 +25,7 @@ MeGit intends to make it easy to just use EGit. It hence doesn't add any functio
 
 # Installing MeGit
 
-We'll provide a direct download soon. For now, please build MeGit yourself.
+Download the archive for your operating system from the [releases](https://github.com/eclipsesource/megit/releases), unpack the archive and run the `megit` or `megit.exe`. You'll need to select a workspace location to store your metadata.
 
 
 # Building
