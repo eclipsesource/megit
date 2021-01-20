@@ -8,6 +8,9 @@
    </configIni>
 
    <launcherArgs>
+      <programArgs>-pluginCustomization plugin_customization.ini
+-cssTheme org.eclipse.e4.ui.css.theme.e4_dark
+      </programArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>
    </launcherArgs>
