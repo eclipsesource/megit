@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="Miminal EGit" uid="com.eclipsesource.megit" id="org.eclipse.platform.ide" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
-
+<product name="Miminal EGit" uid="com.eclipsesource.megit" id="com.eclipsesource.megit.plugin.megit" application="org.eclipse.ui.ide.workbench" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
 
    <configIni use="default">
    </configIni>
@@ -17,13 +16,11 @@
 
    <windowImages/>
 
-
    <launcher name="megit">
       <win useIco="false">
          <bmp/>
       </win>
    </launcher>
-
 
    <vm>
    </vm>
@@ -323,9 +320,9 @@ version(s), and exceptions or additional permissions here}.&quot;
    </features>
 
    <configurations>
+      <plugin id="org.apache.felix.scr" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
-      <plugin id="org.apache.felix.scr" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
    </configurations>

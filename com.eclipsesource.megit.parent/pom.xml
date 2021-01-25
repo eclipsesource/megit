@@ -38,6 +38,7 @@
 
 	<modules>
 		<module>../com.eclipsesource.megit.product</module>
+		<module>../com.eclipsesource.megit.plugin</module>
 		<module>../com.eclipsesource.megit.product.feature</module>
 		<module>../com.eclipsesource.megit.target</module>
 	</modules>
