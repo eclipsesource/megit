@@ -7,10 +7,10 @@
 	<parent>
 		<groupId>com.eclipsesource.megit</groupId>
 		<artifactId>com.eclipsesource.megit.parent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.2-SNAPSHOT</version>
 		<relativePath>../com.eclipsesource.megit.parent</relativePath>
 	</parent>
 	<artifactId>com.eclipsesource.megit.target</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>eclipse-target-definition</packaging>
 </project>

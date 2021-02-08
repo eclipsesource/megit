@@ -38,3 +38,10 @@ mvn clean install
 ```
 
 The runnable product will be available in `com.eclipsesource.megit.product/target` for your platform. Just extract the archive and run `megit`.
+
+# Changelog
+
+  * 0.0.1 Initial release based on Eclipse EGit 2020-12
+  * 0.0.2 Based on Eclipse EGit 2020-12
+    * Git perspective as default and dark theme by default (#7)
+    * Miminize editor area by default and fix of #8 (#9)

@@ -2,7 +2,7 @@
 <feature
       id="com.eclipsesource.megit.product.feature"
       label="Minimal EGit Product Feature"
-      version="0.0.1.qualifier"
+      version="0.0.2.qualifier"
       provider-name="ECLIPSESOURCE">
 
    <description url="http://www.example.com/description">
