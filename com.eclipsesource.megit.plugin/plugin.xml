@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+ <extension
+       id="megit"
+       point="org.eclipse.core.runtime.products">
+    <product
+          application="org.eclipse.ui.ide.workbench"
+          name="Miminal EGit">
+       <property
+             name="appName"
+             value="Miminal EGit">
+       </property>
+       <property                                                                                                                                                                                                                            
+             name="applicationXMI"                                                                                                                                                                                                          
+             value="com.eclipsesource.megit.plugin/LegacyIDE.e4xmi">                                                                                                                                                                                        
+       </property>  
+       <property
+           name="lifeCycleURI"
+           value="bundleclass://com.eclipsesource.megit.plugin/com.eclipsesource.megit.plugin.LifeCycle">
+     </property>
+    </product>
+ </extension>
+</plugin>
