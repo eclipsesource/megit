@@ -7,11 +7,11 @@
 	<parent>
 		<groupId>com.eclipsesource.megit</groupId>
 		<artifactId>com.eclipsesource.megit.parent</artifactId>
-		<version>0.0.2-SNAPSHOT</version>
+		<version>0.0.3-SNAPSHOT</version>
 		<relativePath>../com.eclipsesource.megit.parent</relativePath>
 	</parent>
 	<artifactId>com.eclipsesource.megit.product</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<packaging>eclipse-repository</packaging>
 
 	<build>
