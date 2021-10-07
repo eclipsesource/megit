@@ -27,6 +27,7 @@ MeGit intends to make it easy to just use EGit. It hence doesn't add any functio
 
 Download the archive for your operating system from the [releases](https://github.com/eclipsesource/megit/releases), unpack the archive and run the `megit` or `megit.exe`. You'll need to select a workspace location to store your metadata.
 
+MeGit requires Java 11 or higher to be installed on your system.
 
 # Building
 
