@@ -6,10 +6,10 @@
        point="org.eclipse.core.runtime.products">
     <product
           application="org.eclipse.ui.ide.workbench"
-          name="Miminal EGit">
+          name="Minimal EGit">
        <property
              name="appName"
-             value="Miminal EGit">
+             value="Minimal EGit">
        </property>
        <property                                                                                                                                                                                                                            
              name="applicationXMI"                                                                                                                                                                                                          
