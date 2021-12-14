@@ -2,10 +2,10 @@
 <feature
       id="com.eclipsesource.megit.product.feature"
       label="Minimal EGit Product Feature"
-      version="0.0.4.qualifier"
+      version="0.1.0.qualifier"
       provider-name="ECLIPSESOURCE">
 
-   <description url="http://www.example.com/description">
+   <description url="https://github.com/eclipsesource/megit">
       A minimal standalone application that contains just enough to run EGit conveniently
    </description>
 
