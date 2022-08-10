@@ -49,3 +49,4 @@ The runnable product will be available in `com.eclipsesource.megit.product/targe
   * 0.0.3 Update to Eclipse EGit 2021-03
   * 0.0.4 Update to Eclipse EGit 2021-09
   * 0.1.0 Update to Eclipse EGit 2021-12
+  * 0.2.0 Update to Eclipse EGit 2022-06

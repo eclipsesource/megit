@@ -1,42 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/eclipse-cbi/targetplatform-dsl -->
-<target name="MeGit Target" sequenceNumber="1639490293">
+<target name="MeGit Target" sequenceNumber="1660157178">
   <locations>
     <location includeMode="slicer" includeAllPlatforms="true" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
-      <unit id="org.eclipse.jgit.feature.group" version="6.0.0.202111291000-r"/>
-      <unit id="org.eclipse.jgit.gpg.bc.feature.group" version="6.0.0.202111291000-r"/>
-      <unit id="org.eclipse.jgit.ssh.jsch.feature.group" version="6.0.0.202111291000-r"/>
-      <unit id="org.eclipse.jgit.http.apache.feature.group" version="6.0.0.202111291000-r"/>
-      <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="6.0.0.202111291000-r"/>
-      <unit id="org.eclipse.egit.feature.group" version="6.0.0.202111291000-r"/>
-      <unit id="org.eclipse.egit.gitflow.feature.feature.group" version="6.0.0.202111291000-r"/>
-      <unit id="org.eclipse.emf.sdk.feature.group" version="2.28.0.v20211110-0654"/>
+      <unit id="org.eclipse.jgit.feature.group" version="6.2.0.202206071550-r"/>
+      <unit id="org.eclipse.jgit.gpg.bc.feature.group" version="6.2.0.202206071550-r"/>
+      <unit id="org.eclipse.jgit.ssh.jsch.feature.group" version="6.2.0.202206071550-r"/>
+      <unit id="org.eclipse.jgit.http.apache.feature.group" version="6.2.0.202206071550-r"/>
+      <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="6.2.0.202206071550-r"/>
+      <unit id="org.eclipse.egit.feature.group" version="6.2.0.202206071550-r"/>
+      <unit id="org.eclipse.egit.gitflow.feature.feature.group" version="6.2.0.202206071550-r"/>
+      <unit id="org.eclipse.emf.sdk.feature.group" version="2.30.0.v20220516-1117"/>
       <unit id="org.eclipse.emf.transaction.feature.group" version="1.12.0.201805140824"/>
       <unit id="org.eclipse.emf.validation.feature.group" version="1.12.2.202008210805"/>
-      <unit id="org.eclipse.platform.ide" version="4.22.0.I20211124-1800"/>
-      <unit id="org.eclipse.equinox.p2.rcp.feature.feature.group" version="1.4.1400.v20211104-1616"/>
-      <unit id="org.eclipse.equinox.sdk.feature.group" version="3.23.200.v20211117-0650"/>
-      <unit id="org.eclipse.equinox.core.feature.feature.group" version="1.13.400.v20211104-1730"/>
-      <unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="1.2.1000.v20210813-0655"/>
-      <unit id="org.eclipse.equinox.executable.feature.group" version="3.8.1400.v20211117-0650"/>
+      <unit id="org.eclipse.platform.ide" version="4.24.0.I20220607-0700"/>
+      <unit id="org.eclipse.equinox.p2.rcp.feature.feature.group" version="1.4.1600.v20220518-1326"/>
+      <unit id="org.eclipse.equinox.sdk.feature.group" version="3.23.400.v20220516-2155"/>
+      <unit id="org.eclipse.equinox.core.feature.feature.group" version="1.13.600.v20220516-2155"/>
+      <unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="1.2.1100.v20220210-1157"/>
+      <unit id="org.eclipse.equinox.executable.feature.group" version="3.8.1700.v20220509-0833"/>
       <unit id="org.eclipse.ecf.core.feature.feature.group" version="1.6.1.v20211005-1944"/>
       <unit id="org.eclipse.ecf.core.ssl.feature.feature.group" version="1.1.501.v20210409-2301"/>
-      <unit id="org.eclipse.ecf.filetransfer.feature.feature.group" version="3.14.1800.v20210618-0642"/>
-      <unit id="org.eclipse.ecf.filetransfer.httpclient45.feature.feature.group" version="1.1.0.v20211008-2034"/>
+      <unit id="org.eclipse.ecf.filetransfer.feature.feature.group" version="3.14.1800.v20220215-0126"/>
+      <unit id="org.eclipse.ecf.filetransfer.httpclient5.feature.feature.group" version="1.1.600.v20220215-0126"/>
       <unit id="org.eclipse.ecf.filetransfer.ssl.feature.feature.group" version="1.1.401.v20210409-2301"/>
       <unit id="javaewah" version="1.1.13.v20211029-0839"/>
+      <unit id="org.bouncycastle.bcpg" version="1.70.0.v20220507-1208"/>
+      <unit id="org.bouncycastle.bcprov" version="1.70.0.v20220507-1208"/>
+      <unit id="net.i2p.crypto.eddsa" version="0.3.0.v20220506-1020"/>
+      <unit id="org.apache.commons.io" version="2.8.0.v20210415-0900"/>
       <unit id="org.apache.commons.compress" version="1.21.0.v20211103-2100"/>
-      <unit id="org.bouncycastle.bcpg" version="1.69.0.v20210713-1924"/>
-      <unit id="org.bouncycastle.bcprov" version="1.69.0.v20210923-1401"/>
-      <unit id="net.i2p.crypto.eddsa" version="0.3.0.v20210923-1401"/>
-      <unit id="org.apache.sshd.sftp" version="2.7.0.v20210623-0618"/>
-      <repository location="https://download.eclipse.org/releases/2021-12/"/>
+      <unit id="org.apache.httpcomponents.httpcore" version="4.4.15.v20220209-2345"/>
+      <unit id="org.apache.httpcomponents.httpclient" version="4.5.13.v20210128-2225"/>
+      <unit id="org.apache.commons.codec" version="1.14.0.v20200818-1422"/>
+      <unit id="org.apache.sshd.sftp" version="2.8.0.v20211227-1750"/>
+      <unit id="javax.servlet.jsp" version="2.2.0.v201112011158"/>
+      <repository location="https://download.eclipse.org/releases/2022-06/"/>
     </location>
     <location includeMode="slicer" includeAllPlatforms="true" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="com.google.guava" version="30.1.0.v20210127-2300"/>
-      <unit id="com.google.gson" version="2.8.8.v20211029-0838"/>
-      <repository location="https://download.eclipse.org/tools/orbit/downloads/drops/R20211213173813/repository"/>
+      <unit id="com.google.gson" version="2.8.9.v20220111-1409"/>
+      <repository location="https://download.eclipse.org/tools/orbit/downloads/drops/R20220531185310/repository"/>
     </location>
   </locations>
 </target>
