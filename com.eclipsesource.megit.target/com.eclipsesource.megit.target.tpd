@@ -1,6 +1,6 @@
 target "MeGit Target"
 with allEnvironments source
-location "https://download.eclipse.org/releases/2022-06/" {
+location "https://download.eclipse.org/releases/2022-12/" {
 	org.eclipse.jgit.feature.group
 	org.eclipse.jgit.gpg.bc.feature.group
 	org.eclipse.jgit.ssh.jsch.feature.group
@@ -22,9 +22,8 @@ location "https://download.eclipse.org/releases/2022-06/" {
 	org.eclipse.ecf.filetransfer.feature.feature.group
 	org.eclipse.ecf.filetransfer.httpclient5.feature.feature.group
 	org.eclipse.ecf.filetransfer.ssl.feature.feature.group
+	org.eclipse.jdt.core
 	javaewah
-	org.bouncycastle.bcpg
-	org.bouncycastle.bcprov
 	net.i2p.crypto.eddsa
 	org.apache.commons.io
 	org.apache.commons.compress
@@ -32,9 +31,11 @@ location "https://download.eclipse.org/releases/2022-06/" {
 	org.apache.httpcomponents.httpclient
 	org.apache.commons.codec
 	org.apache.sshd.sftp
-	javax.servlet.jsp
+	org.apache.sshd.osgi
+	slf4j.api
+	slf4j.nop
 }
-location "https://download.eclipse.org/tools/orbit/downloads/drops/R20220531185310/repository" {
+location "https://download.eclipse.org/tools/orbit/downloads/drops/R20221123021534/repository" {
 	com.google.guava
 	com.google.gson
 }
