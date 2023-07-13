@@ -1,6 +1,6 @@
 target "MeGit Target"
 with allEnvironments source
-location "https://download.eclipse.org/releases/2022-12/" {
+location "https://download.eclipse.org/releases/2023-06/" {
 	org.eclipse.jgit.feature.group
 	org.eclipse.jgit.gpg.bc.feature.group
 	org.eclipse.jgit.ssh.jsch.feature.group
@@ -22,8 +22,8 @@ location "https://download.eclipse.org/releases/2022-12/" {
 	org.eclipse.ecf.filetransfer.feature.feature.group
 	org.eclipse.ecf.filetransfer.httpclient5.feature.feature.group
 	org.eclipse.ecf.filetransfer.ssl.feature.feature.group
+	org.eclipse.jdt.core.compiler.batch
 	org.eclipse.jdt.core
-	javaewah
 	net.i2p.crypto.eddsa
 	org.apache.commons.io
 	org.apache.commons.compress
@@ -34,8 +34,24 @@ location "https://download.eclipse.org/releases/2022-12/" {
 	org.apache.sshd.osgi
 	slf4j.api
 	slf4j.nop
+	org.apache.aries.spifly.dynamic.bundle
+	javax.annotation
+	javax.inject
+	org.apache.commons.jxpath
+	com.sun.jna
+	com.sun.jna.platform
 }
-location "https://download.eclipse.org/tools/orbit/downloads/drops/R20221123021534/repository" {
+location "https://download.eclipse.org/tools/orbit/downloads/drops/R20230531010532/repository" {
 	com.google.guava
 	com.google.gson
+	org.bouncycastle.bcpg
+	org.bouncycastle.bcpkix
+	org.bouncycastle.bcprov
+	org.bouncycastle.bcutil
+	javaewah
+	org.objectweb.asm
+	org.objectweb.asm.commons
+	org.objectweb.asm.util
+	org.objectweb.asm.tree
+	org.objectweb.asm.analysis
 }

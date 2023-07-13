@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Plugin
 Bundle-SymbolicName: com.eclipsesource.megit.plugin;singleton:=true
-Bundle-Version: 0.3.0.qualifier
+Bundle-Version: 0.4.0.qualifier
 Bundle-Activator: com.eclipsesource.megit.plugin.Activator
 Bundle-Vendor: ECLIPSESOURCE
 Require-Bundle: org.eclipse.ui,
