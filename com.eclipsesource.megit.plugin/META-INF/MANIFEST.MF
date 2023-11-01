@@ -14,6 +14,6 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.e4.core.di.annotations,
  org.eclipse.e4.core.contexts,
  javax.inject
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-RequiredExecutionEnvironment: JavaSE-17
 Automatic-Module-Name: com.eclipsesource.megit.plugin
 Bundle-ActivationPolicy: lazy
