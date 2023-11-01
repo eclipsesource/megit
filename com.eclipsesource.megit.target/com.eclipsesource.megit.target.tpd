@@ -6,6 +6,7 @@ location "https://download.eclipse.org/releases/2023-06/" {
 	org.eclipse.jgit.ssh.jsch.feature.group
 	org.eclipse.jgit.http.apache.feature.group
 	org.eclipse.jgit.ssh.apache.feature.group
+	org.eclipse.jgit.lfs.feature.group
 	org.eclipse.egit.feature.group
 	org.eclipse.egit.gitflow.feature.feature.group
 	org.eclipse.emf.sdk.feature.group

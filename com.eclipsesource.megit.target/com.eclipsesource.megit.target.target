@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/eclipse-cbi/targetplatform-dsl -->
-<target name="MeGit Target" sequenceNumber="1689280877">
+<target name="MeGit Target" sequenceNumber="1698856336">
   <locations>
     <location includeMode="slicer" includeAllPlatforms="true" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="org.eclipse.jgit.feature.group" version="6.6.0.202305301015-r"/>
@@ -9,6 +9,7 @@
       <unit id="org.eclipse.jgit.ssh.jsch.feature.group" version="6.6.0.202305301015-r"/>
       <unit id="org.eclipse.jgit.http.apache.feature.group" version="6.6.0.202305301015-r"/>
       <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="6.6.0.202305301015-r"/>
+      <unit id="org.eclipse.jgit.lfs.feature.group" version="6.6.0.202305301015-r"/>
       <unit id="org.eclipse.egit.feature.group" version="6.6.0.202305301015-r"/>
       <unit id="org.eclipse.egit.gitflow.feature.feature.group" version="6.6.0.202305301015-r"/>
       <unit id="org.eclipse.emf.sdk.feature.group" version="2.34.0.v20230406-1334"/>
