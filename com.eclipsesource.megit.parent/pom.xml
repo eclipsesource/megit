@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.eclipsesource.megit</groupId>
 	<artifactId>com.eclipsesource.megit.parent</artifactId>
-	<version>0.4.0-SNAPSHOT</version>
+	<version>0.5.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -13,7 +14,7 @@
 		<tycho-extras-version>2.7.5</tycho-extras-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.release>17</maven.compiler.release>
-		
+
 		<mav-checkstyle-version>3.0.0</mav-checkstyle-version>
 		<checkstyle-version>8.8</checkstyle-version>
 	</properties>
@@ -26,9 +27,9 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</pluginRepository>
-			<pluginRepository>
+		<pluginRepository>
 			<id>apache-maven-releases</id>
-			<url>http://repo.maven.apache.org/maven2</url>
+			<url>https://repo.maven.apache.org/maven2</url>
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
@@ -46,10 +47,10 @@
 		<sourceDirectory>src</sourceDirectory>
 		<outputDirectory>bin</outputDirectory>
 		<plugins>
-			<plugin>  
-				<groupId>org.eclipse.tycho</groupId>  
-				<artifactId>tycho-versions-plugin</artifactId>  
-				<version>${tycho-version}</version>  
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-versions-plugin</artifactId>
+				<version>${tycho-version}</version>
 			</plugin>
 
 			<plugin>
@@ -121,15 +122,17 @@
 					</dependency>
 				</dependencies>
 				<configuration>
-					<!-- <timestampProvider>jgit</timestampProvider> -->
-					<!-- generate new qualifier even if it is only the pom.xml that changed 
-						<jgit.ignore> pom.xml </jgit.ignore> -->
 					<format>yyyyMMdd-HHmm</format>
 					<!-- 
 					<sourceReferences>
 						<generate>true</generate>
 					</sourceReferences>
 					 -->
+					<timestampProvider>jgit</timestampProvider>
+					<jgit.ignore>
+						pom.xml
+					</jgit.ignore>
+					<jgit.dirtyWorkingTree>ignore</jgit.dirtyWorkingTree>
 				</configuration>
 			</plugin>
 

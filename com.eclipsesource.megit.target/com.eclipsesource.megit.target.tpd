@@ -1,6 +1,6 @@
 target "MeGit Target"
 with allEnvironments source
-location "https://download.eclipse.org/releases/2023-06/" {
+location "https://download.eclipse.org/releases/2023-09/" {
 	org.eclipse.jgit.feature.group
 	org.eclipse.jgit.gpg.bc.feature.group
 	org.eclipse.jgit.ssh.jsch.feature.group
@@ -30,9 +30,11 @@ location "https://download.eclipse.org/releases/2023-06/" {
 	org.apache.commons.compress
 	org.apache.httpcomponents.httpcore
 	org.apache.httpcomponents.httpclient
-	org.apache.commons.codec
 	org.apache.sshd.sftp
 	org.apache.sshd.osgi
+	org.apache.lucene.core
+	org.apache.lucene.analysis-common
+	org.apache.lucene.analysis-smartcn
 	slf4j.api
 	slf4j.nop
 	org.apache.aries.spifly.dynamic.bundle
@@ -55,4 +57,12 @@ location "https://download.eclipse.org/tools/orbit/downloads/drops/R202305310105
 	org.objectweb.asm.util
 	org.objectweb.asm.tree
 	org.objectweb.asm.analysis
+}
+
+maven MavenDependencies scope=compile,test dependencyDepth=infinite missingManifest=generate includeSources {
+	dependency {
+		groupId="commons-codec"
+		artifactId="commons-codec"
+		version="1.15"
+	}
 }
