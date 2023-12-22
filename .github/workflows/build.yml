@@ -19,3 +19,6 @@ jobs:
         cache: maven
     - name: Build (mvn package)
       run: mvn -B package --file com.eclipsesource.megit.parent/pom.xml
+    - uses: actions/upload-artifact@v4
+      with:
+        path: ./com.eclipsesource.megit.product/target/products/*.zip
