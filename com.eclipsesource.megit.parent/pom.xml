@@ -126,7 +126,8 @@
                         <groupId>org.eclipse.tycho.extras</groupId>
                         <artifactId>tycho-sourceref-jgit</artifactId>
                         <version>${tycho-extras-version}</version>
-                    </dependency>				</dependencies>
+                    </dependency>				
+                </dependencies>
 				<configuration>
 					<format>yyyyMMdd-HHmm</format>
 					<sourceReferences>
