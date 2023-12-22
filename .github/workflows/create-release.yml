@@ -2,7 +2,7 @@ name: Draft Release
 
 on:
   release:
-    types: [drafted]
+    types: [created]
 
 jobs:
   build:
