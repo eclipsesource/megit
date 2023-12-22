@@ -10,15 +10,24 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<tycho-version>2.7.5</tycho-version>
-		<tycho-extras-version>2.7.5</tycho-extras-version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.release>17</maven.compiler.release>
-
+		<tycho-version>4.0.4</tycho-version>
+		<tycho-extras-version>4.0.4</tycho-extras-version>
 		<mav-checkstyle-version>3.0.0</mav-checkstyle-version>
 		<checkstyle-version>8.8</checkstyle-version>
+
+		<maven.compiler.release>17</maven.compiler.release>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<tycho.scmUrl>scm:git:https://github.com/eclipsesource/megit.git</tycho.scmUrl>
 	</properties>
 
+   <repositories>
+      <repository>
+         <id>justj</id>
+         <url>https://download.eclipse.org/justj/jres/17/updates/release/latest</url>
+         <layout>p2</layout>
+      </repository>
+   </repositories>
+   
 	<pluginRepositories>
 		<pluginRepository>
 			<id>eclipse-maven-releases</id>
@@ -65,10 +74,8 @@
 				<artifactId>target-platform-configuration</artifactId>
 				<version>${tycho-version}</version>
 				<configuration>
-					<resolver>p2</resolver>
 					<pomDependencies>consider</pomDependencies>
-					<allowConflictingDependencies>true</allowConflictingDependencies>
-					<includePackedArtifacts>true</includePackedArtifacts>
+					<executionEnvironment>org.eclipse.justj.openjdk.hotspot.jre.full-17</executionEnvironment>
 					<environments>
 						<environment>
 							<os>win32</os>
@@ -110,24 +117,22 @@
 				<artifactId>tycho-packaging-plugin</artifactId>
 				<version>${tycho-version}</version>
 				<dependencies>
-					<dependency>
-						<groupId>org.eclipse.tycho.extras</groupId>
-						<artifactId>tycho-buildtimestamp-jgit</artifactId>
-						<version>${tycho-extras-version}</version>
-					</dependency>
-					<dependency>
-						<groupId>org.eclipse.tycho.extras</groupId>
-						<artifactId>tycho-sourceref-jgit</artifactId>
-						<version>${tycho-extras-version}</version>
-					</dependency>
-				</dependencies>
+                    <dependency>
+                        <groupId>org.eclipse.tycho</groupId>
+                        <artifactId>tycho-buildtimestamp-jgit</artifactId>
+                        <version>${tycho-version}</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>org.eclipse.tycho.extras</groupId>
+                        <artifactId>tycho-sourceref-jgit</artifactId>
+                        <version>${tycho-extras-version}</version>
+                    </dependency>				
+                </dependencies>
 				<configuration>
 					<format>yyyyMMdd-HHmm</format>
-					<!-- 
 					<sourceReferences>
 						<generate>true</generate>
 					</sourceReferences>
-					 -->
 					<timestampProvider>jgit</timestampProvider>
 					<jgit.ignore>
 						pom.xml
@@ -159,7 +164,6 @@
 				<version>${tycho-version}</version>
 				<configuration>
 					<useProjectSettings>true</useProjectSettings>
-					<logEnabled>true</logEnabled>
 					<logDirectory>${project.build.directory}/logfiles</logDirectory>
 					<log>xml</log>
 					<!-- <useJDK>BREE</useJDK> -->

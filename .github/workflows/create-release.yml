@@ -14,6 +14,10 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+    - name: Set up Maven
+      uses: stCarolas/setup-maven@v4.5
+      with:
+        maven-version: 3.9.2
     - name: Build (mvn package)
       run: mvn -B package --file com.eclipsesource.megit.parent/pom.xml
     - name: Create Release
