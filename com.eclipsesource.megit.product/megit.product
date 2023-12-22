@@ -309,14 +309,14 @@ version(s), and exceptions or additional permissions here}.&quot;
    </license>
 
    <plugins>
+      <plugin id="com.eclipsesource.megit.plugin"/>
       <plugin id="org.eclipse.justj.openjdk.hotspot.jre.full"/>
    </plugins>
 
    <features>
-      <feature id="com.eclipsesource.megit.product.feature"/>
       <feature id="org.eclipse.platform"/>
       <feature id="org.eclipse.jgit"/>
-      <feature id="org.eclipse.jgit.lfs" installMode="root"/>
+      <feature id="org.eclipse.jgit.lfs"/>
       <feature id="org.eclipse.egit"/>
       <feature id="org.eclipse.egit.gitflow.feature"/>
    </features>
