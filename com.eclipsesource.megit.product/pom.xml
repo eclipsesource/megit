@@ -37,6 +37,8 @@
 					<products>
 						<product>
 							<id>com.eclipsesource.megit</id>
+							<rootFolder>MeGit</rootFolder>
+							<archiveFileName>megit-${unqualifiedVersion}</archiveFileName>
 						</product>
 					</products>
 				</configuration>

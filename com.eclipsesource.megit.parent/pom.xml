@@ -48,8 +48,6 @@
 	<modules>
 		<module>../com.eclipsesource.megit.product</module>
 		<module>../com.eclipsesource.megit.plugin</module>
-		<module>../com.eclipsesource.megit.product.feature</module>
-		<module>../com.eclipsesource.megit.target</module>
 	</modules>
 
 	<build>
@@ -76,6 +74,9 @@
 				<configuration>
 					<pomDependencies>consider</pomDependencies>
 					<executionEnvironment>org.eclipse.justj.openjdk.hotspot.jre.full-17</executionEnvironment>
+                    <target>
+                        <file>../com.eclipsesource.megit.parent/megit.target</file>
+                    </target>
 					<environments>
 						<environment>
 							<os>win32</os>
@@ -103,13 +104,6 @@
 							<arch>aarch64</arch>
 						</environment>
 					</environments>
-					<target>
-						<artifact>
-							<groupId>com.eclipsesource.megit</groupId>
-							<artifactId>com.eclipsesource.megit.target</artifactId>
-							<version>${project.version}</version>
-						</artifact>
-					</target>
 				</configuration>
 			</plugin>
 			<plugin>

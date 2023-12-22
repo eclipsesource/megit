@@ -62,16 +62,6 @@
       <unit id="org.objectweb.asm.analysis" version="9.4.0.v20221107-1714"/>
       <repository location="https://download.eclipse.org/tools/orbit/downloads/drops/R20230531010532/repository"/>
     </location>
-	  <location includeDependencyDepth="infinite" includeDependencyScopes="compile,test" includeSource="true" label="MavenDependencies" missingManifest="generate" type="Maven">
-		  <dependencies>
-			  <dependency>
-				  <groupId>commons-codec</groupId>
-				  <artifactId>commons-codec</artifactId>
-				  <version>1.15</version>
-				  <type>jar</type>
-			  </dependency>
-		  </dependencies>
-	  </location>
 	  <location includeAllPlatforms="true" includeConfigurePhase="false" includeMode="slicer" includeSource="true" type="InstallableUnit">
 		  <repository location="https://download.eclipse.org/justj/jres/17/updates/release/latest"/>
 		  <unit id="org.eclipse.justj.openjdk.hotspot.jre.base.feature.group" version="17.0.9.v20231028-0858"/>
@@ -81,5 +71,15 @@
 		  <unit id="org.eclipse.justj.openjdk.hotspot.jre.minimal.feature.group" version="17.0.9.v20231028-0858"/>
 		  <unit id="org.eclipse.justj.openjdk.hotspot.jre.minimal.stripped.feature.group" version="17.0.9.v20231028-0858"/>
 	  </location>
+      <location includeDependencyDepth="infinite" includeDependencyScopes="compile,test" includeSource="true" label="MavenDependencies" missingManifest="generate" type="Maven">
+          <dependencies>
+              <dependency>
+                  <groupId>commons-codec</groupId>
+                  <artifactId>commons-codec</artifactId>
+                  <version>1.15</version>
+                  <type>jar</type>
+              </dependency>
+          </dependencies>
+      </location>
   </locations>
 </target>
