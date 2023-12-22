@@ -23,4 +23,11 @@ jobs:
         maven-version: 3.9.2
     - name: Build (mvn package)
       run: mvn -B package --file com.eclipsesource.megit.parent/pom.xml
-  
+    - uses: actions/upload-artifact@v4
+      with:
+        path: ./com.eclipsesource.megit.product/target/products/com.eclipsesource.megit-linux.gtk.x86_64.tar.gz
+        name: com.eclipsesource.megit-linux.gtk.x86_64.tar.gz
+    - uses: actions/upload-artifact@v4
+      with:
+        path: ./com.eclipsesource.megit.product/target/products/com.eclipsesource.megit-win32.win32.x86_64.zip
+        name: com.eclipsesource.megit-win32.win32.x86_64.zip
