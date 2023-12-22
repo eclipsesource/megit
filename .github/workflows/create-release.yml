@@ -1,8 +1,7 @@
 name: Draft Release
 
 on:
-  release:
-    types: [created]
+  workflow_dispatch:
 
 jobs:
   build:
@@ -17,15 +16,8 @@ jobs:
         cache: maven
     - name: Build (mvn package)
       run: mvn -B package --file com.eclipsesource.megit.parent/pom.xml
-    - name: Upload each zip file as a separate asset
-      run: |
-        for zipfile in ./com.eclipsesource.megit.product/target/products/*.zip; do
-          asset_name=$(basename $zipfile)
-          echo "Uploading $asset_name"
-          curl \
-            -X POST \
-            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
-            -H "Content-Type: $(file -b --mime-type $zipfile)" \
-            --data-binary @$zipfile \
-            ${{ github.event.release.upload_url }}?name=$asset_name
-        done
+    - name: Create Release
+      uses: softprops/action-gh-release@v1
+      with:
+        draft: true
+        files: ./com.eclipsesource.megit.product/target/products/*.zip
