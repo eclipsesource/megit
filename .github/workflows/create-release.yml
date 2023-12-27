@@ -24,4 +24,4 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         draft: true
-        files: ./com.eclipsesource.megit.product/target/products/*.zip
+        files: ./com.eclipsesource.megit.product/target/products/*.(zip|gz)
