@@ -54,3 +54,5 @@ The runnable product will be available in `com.eclipsesource.megit.product/targe
 - 0.4.0 Update to Eclipse EGit 2023-06
 - 0.5.0 Update to Eclipse EGit 2023-09
   - Add Git LFS support
+- 0.6.0 Update to Eclipse EGit 2023-12
+  - Package JVM with product (#42)

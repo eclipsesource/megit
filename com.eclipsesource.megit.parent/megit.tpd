@@ -1,0 +1,123 @@
+target "MeGit Target"
+with allEnvironments source
+location "https://download.eclipse.org/releases/2023-12/" {
+	org.eclipse.jgit.feature.group
+	org.eclipse.jgit.gpg.bc.feature.group
+	org.eclipse.jgit.ssh.jsch.feature.group
+	org.eclipse.jgit.http.apache.feature.group
+	org.eclipse.jgit.ssh.apache.feature.group
+	org.eclipse.jgit.lfs.feature.group
+	org.eclipse.egit.feature.group
+	org.eclipse.egit.gitflow.feature.feature.group
+	org.eclipse.emf.sdk.feature.group
+	org.eclipse.emf.transaction.feature.group
+	org.eclipse.emf.validation.feature.group
+	org.eclipse.platform.ide
+	org.eclipse.equinox.p2.rcp.feature.feature.group
+	org.eclipse.equinox.sdk.feature.group
+	org.eclipse.equinox.core.feature.feature.group
+	org.eclipse.equinox.p2.discovery.feature.feature.group
+	org.eclipse.equinox.executable.feature.group
+	org.eclipse.ecf.core.feature.feature.group
+	org.eclipse.ecf.core.ssl.feature.feature.group
+	org.eclipse.ecf.filetransfer.feature.feature.group
+	org.eclipse.ecf.filetransfer.httpclient5.feature.feature.group
+	org.eclipse.ecf.filetransfer.ssl.feature.feature.group
+	org.eclipse.jdt.core.compiler.batch
+	org.eclipse.jdt.core
+	net.i2p.crypto.eddsa
+	org.apache.commons.io
+	org.apache.httpcomponents.httpcore
+	org.apache.httpcomponents.httpclient
+	org.apache.sshd.sftp
+	org.apache.sshd.osgi
+	org.apache.lucene.core
+	org.apache.lucene.analysis-common
+	org.apache.lucene.analysis-smartcn
+	slf4j.api
+	org.apache.aries.spifly.dynamic.bundle
+	org.apache.commons.jxpath
+	com.sun.jna
+	com.sun.jna.platform
+	jakarta.inject.jakarta.inject-api
+	jakarta.annotation-api
+	org.eclipse.jetty.http
+	org.eclipse.jetty.server
+	org.eclipse.jetty.session
+	org.eclipse.jetty.ee8.servlet
+	org.eclipse.jetty.ee8.security
+	com.sun.el.javax.el
+	org.eclipse.search.core
+	org.objectweb.asm
+	org.objectweb.asm.commons
+	org.objectweb.asm.util
+	org.objectweb.asm.tree
+	org.objectweb.asm.tree.analysis
+	org.apache.commons.commons-codec
+}
+location "https://download.eclipse.org/tools/orbit/downloads/drops/R20230531010532/repository" {
+	com.google.guava
+	com.google.gson
+	org.bouncycastle.bcpg
+	org.bouncycastle.bcpkix
+	org.bouncycastle.bcprov
+	org.bouncycastle.bcutil
+	org.objectweb.asm.analysis
+	javaewah
+	org.apache.commons.compress
+	javax.inject
+	org.apache.batik.css
+	org.apache.batik.util
+	org.apache.batik.constants
+	org.apache.batik.i18n
+	org.apache.commons.logging
+	com.ibm.icu
+}
+
+maven MavenDependencies scope=compile,test dependencyDepth=infinite missingManifest=generate includeSources {
+	dependency {
+		groupId="org.eclipse.birt.runtime.3_7_1"
+		artifactId="org.w3c.dom.svg"
+		version="1.1.0"
+	}
+	dependency {
+		groupId="org.eclipse.birt.runtime.3_7_1"
+		artifactId="org.w3c.css.sac"
+		version="1.3.0"
+	}
+	dependency {
+		groupId="org.eclipse.birt.runtime"
+		artifactId="org.w3c.dom.events"
+		version="3.0.0.draft20060413_v201105210656"
+	}
+	dependency {
+		groupId="org.eclipse.birt.runtime.3_7_1"
+		artifactId="org.w3c.dom.smil"
+		version="1.0.0"
+	}
+	dependency {
+		groupId="commons-io"
+		artifactId="commons-io"
+		version="1.4"
+	}
+	dependency {
+		groupId="javax.servlet"
+		artifactId="javax.servlet-api"
+		version="4.0.1"
+	}
+	dependency {
+		groupId="org.glassfish.web"
+		artifactId="javax.servlet.jsp"
+		version="2.3.4"
+	}
+	dependency {
+		groupId="org.eclipse.jetty.ee8"
+		artifactId="jetty-ee8-nested"
+		version="12.0.5"
+	}
+	dependency {
+		groupId="org.mortbay.jasper"
+		artifactId="apache-jsp"
+		version="9.0.83"
+	}
+}
