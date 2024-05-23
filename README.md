@@ -19,7 +19,7 @@ EGit (and hence MeGit) provides tons of features:
 - Support for GitFlow operations
 - and much more.
 
-Please refer to the [EGit user guide](https://wiki.eclipse.org/EGit/User_Guide) to learn more.
+Please refer to the [EGit user guide](https://github.com/eclipse-egit/egit/wiki/User-Guide) to learn more.
 
 MeGit intends to make it easy to just use EGit. It hence doesn't add any functionality itself, but only builds EGit as a standalone application with the minimal dependencies. Thus, start up should be fast. Just open MeGit and add the git repositories you care about. There is no need to import them as Eclipse projects. Just use the EGit perspective and directly handle your git tasks on the imported git repositories.
 
