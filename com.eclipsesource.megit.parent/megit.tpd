@@ -1,6 +1,7 @@
 target "MeGit Target"
 with allEnvironments source
-location "https://download.eclipse.org/releases/2023-12/" {
+location "https://download.eclipse.org/releases/2024-06/" {
+	org.eclipse.equinox.http.service.api
 	org.eclipse.jgit.feature.group
 	org.eclipse.jgit.gpg.bc.feature.group
 	org.eclipse.jgit.ssh.jsch.feature.group
@@ -34,12 +35,10 @@ location "https://download.eclipse.org/releases/2023-12/" {
 	org.apache.lucene.core
 	org.apache.lucene.analysis-common
 	org.apache.lucene.analysis-smartcn
-	slf4j.api
 	org.apache.aries.spifly.dynamic.bundle
 	org.apache.commons.jxpath
 	com.sun.jna
 	com.sun.jna.platform
-	jakarta.inject.jakarta.inject-api
 	jakarta.annotation-api
 	org.eclipse.jetty.http
 	org.eclipse.jetty.server
@@ -54,27 +53,42 @@ location "https://download.eclipse.org/releases/2023-12/" {
 	org.objectweb.asm.tree
 	org.objectweb.asm.tree.analysis
 	org.apache.commons.commons-codec
+	org.apache.commons.commons-compress
+	org.eclipse.tm4e.feature.feature.group
+	org.eclipse.tm4e.language_pack.feature.feature.group
+	org.eclipse.tm4e.languageconfiguration
+	org.jcodings
+	org.joni
+	org.snakeyaml.engine
 }
-location "https://download.eclipse.org/tools/orbit/downloads/drops/R20230531010532/repository" {
+location "https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/2024-06/" {
 	com.google.guava
 	com.google.gson
-	org.bouncycastle.bcpg
-	org.bouncycastle.bcpkix
-	org.bouncycastle.bcprov
-	org.bouncycastle.bcutil
-	org.objectweb.asm.analysis
-	javaewah
-	org.apache.commons.compress
-	javax.inject
+	bcpg
+	bcpkix
+	bcprov
+	bcutil
+	com.googlecode.javaewah.JavaEWAH
 	org.apache.batik.css
 	org.apache.batik.util
 	org.apache.batik.constants
 	org.apache.batik.i18n
 	org.apache.commons.logging
 	com.ibm.icu
+	jakarta.inject.jakarta.inject-api
+	com.google.inject
 }
 
-maven MavenDependencies scope=compile,test dependencyDepth=infinite missingManifest=generate includeSources {
+location "https://download.eclipse.org/tools/orbit/downloads/drops/R20230531010532/repository" {
+	javax.inject
+}
+
+maven MavenDependencies scope=compile dependencyDepth=infinite missingManifest=generate includeSources {
+	dependency {
+		groupId="org.osgi"
+		artifactId="org.osgi.service.http.whiteboard"
+		version="1.1.0"
+	}
 	dependency {
 		groupId="org.eclipse.birt.runtime.3_7_1"
 		artifactId="org.w3c.dom.svg"
@@ -119,5 +133,16 @@ maven MavenDependencies scope=compile,test dependencyDepth=infinite missingManif
 		groupId="org.mortbay.jasper"
 		artifactId="apache-jsp"
 		version="9.0.83"
+	}
+	dependency {
+		groupId="org.eclipse.jetty.ee8"
+		artifactId="jetty-ee8-nested"
+		version="12.0.11"
+	}
+	
+	dependency {
+		groupId="org.slf4j"
+		artifactId="slf4j-simple"
+		version="2.1.0-alpha1"
 	}
 }
