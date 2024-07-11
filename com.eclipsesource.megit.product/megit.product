@@ -319,6 +319,8 @@ version(s), and exceptions or additional permissions here}.&quot;
       <feature id="org.eclipse.jgit.lfs"/>
       <feature id="org.eclipse.egit"/>
       <feature id="org.eclipse.egit.gitflow.feature"/>
+      <feature id="org.eclipse.tm4e.feature" installMode="root"/>
+      <feature id="org.eclipse.tm4e.language_pack.feature" installMode="root"/>
    </features>
 
    <configurations>
