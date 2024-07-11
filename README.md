@@ -56,3 +56,6 @@ The runnable product will be available in `com.eclipsesource.megit.product/targe
   - Add Git LFS support
 - 0.6.0 Update to Eclipse EGit 2023-12
   - Package JVM with product (#42)
+- 0.7.0 Update to Eclipse EGit 2024-06
+  - Adds org.eclipse.tm4e for generic syntax highlighting
+
