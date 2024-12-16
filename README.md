@@ -27,7 +27,7 @@ MeGit intends to make it easy to just use EGit. It hence doesn't add any functio
 
 Download the archive for your operating system from the [releases](https://github.com/eclipsesource/megit/releases), unpack the archive and run the `megit` or `megit.exe`. You'll need to select a workspace location to store your metadata.
 
-MeGit requires Java 17, but ships with a Java runtime environment.
+MeGit requires Java 21, but ships with a Java runtime environment.
 
 # Building
 
@@ -58,4 +58,5 @@ The runnable product will be available in `com.eclipsesource.megit.product/targe
   - Package JVM with product (#42)
 - 0.7.0 Update to Eclipse EGit 2024-06
   - Adds org.eclipse.tm4e for generic syntax highlighting
-
+- 0.8.0 Update to Eclipse EGit 2024-12
+  - Switches to Java 21

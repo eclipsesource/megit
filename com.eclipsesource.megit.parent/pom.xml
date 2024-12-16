@@ -6,16 +6,16 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.eclipsesource.megit</groupId>
 	<artifactId>com.eclipsesource.megit.parent</artifactId>
-	<version>0.7.0-SNAPSHOT</version>
+	<version>0.8.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
-		<tycho-version>4.0.4</tycho-version>
-		<tycho-extras-version>4.0.4</tycho-extras-version>
+		<tycho-version>4.0.10</tycho-version>
+		<tycho-extras-version>4.0.10</tycho-extras-version>
 		<mav-checkstyle-version>3.0.0</mav-checkstyle-version>
 		<checkstyle-version>8.8</checkstyle-version>
 
-		<maven.compiler.release>17</maven.compiler.release>
+		<maven.compiler.release>21</maven.compiler.release>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<tycho.scmUrl>scm:git:https://github.com/eclipsesource/megit.git</tycho.scmUrl>
 	</properties>
@@ -23,7 +23,7 @@
    <repositories>
       <repository>
          <id>justj</id>
-         <url>https://download.eclipse.org/justj/jres/17/updates/release/latest</url>
+         <url>https://download.eclipse.org/justj/jres/21/updates/release/latest</url>
          <layout>p2</layout>
       </repository>
    </repositories>
@@ -73,7 +73,7 @@
 				<version>${tycho-version}</version>
 				<configuration>
 					<pomDependencies>consider</pomDependencies>
-					<executionEnvironment>org.eclipse.justj.openjdk.hotspot.jre.full-17</executionEnvironment>
+					<executionEnvironment>org.eclipse.justj.openjdk.hotspot.jre.full-21</executionEnvironment>
                     <target>
                         <file>../com.eclipsesource.megit.parent/megit.target</file>
                     </target>

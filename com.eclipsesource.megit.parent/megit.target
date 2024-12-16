@@ -1,164 +1,422 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/eclipse-cbi/targetplatform-dsl -->
-<target name="MeGit Target" sequenceNumber="1720724565">
+<target name="MeGit Target" sequenceNumber="1734366042">
   <locations>
     <location includeMode="slicer" includeAllPlatforms="true" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="org.eclipse.equinox.http.service.api" version="1.2.2.v20231218-2126"/>
-      <unit id="org.eclipse.jgit.feature.group" version="6.10.0.202406032230-r"/>
-      <unit id="org.eclipse.jgit.gpg.bc.feature.group" version="6.10.0.202406032230-r"/>
-      <unit id="org.eclipse.jgit.ssh.jsch.feature.group" version="6.10.0.202406032230-r"/>
-      <unit id="org.eclipse.jgit.http.apache.feature.group" version="6.10.0.202406032230-r"/>
-      <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="6.10.0.202406032230-r"/>
-      <unit id="org.eclipse.jgit.lfs.feature.group" version="6.10.0.202406032230-r"/>
-      <unit id="org.eclipse.egit.feature.group" version="6.10.0.202406032230-r"/>
-      <unit id="org.eclipse.egit.gitflow.feature.feature.group" version="6.10.0.202406032230-r"/>
-      <unit id="org.eclipse.emf.sdk.feature.group" version="2.38.0.v20240314-1003"/>
-      <unit id="org.eclipse.emf.transaction.feature.group" version="1.13.0.202208110935"/>
-      <unit id="org.eclipse.emf.validation.feature.group" version="1.13.3.202305230712"/>
-      <unit id="org.eclipse.platform.ide" version="4.32.0.I20240601-0610"/>
-      <unit id="org.eclipse.equinox.p2.rcp.feature.feature.group" version="1.4.2400.v20240515-1919"/>
-      <unit id="org.eclipse.equinox.sdk.feature.group" version="3.23.1200.v20240524-2033"/>
-      <unit id="org.eclipse.equinox.core.feature.feature.group" version="1.15.100.v20240524-2011"/>
-      <unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="1.3.400.v20240417-0757"/>
-      <unit id="org.eclipse.equinox.executable.feature.group" version="3.8.2500.v20240513-1750"/>
-      <unit id="org.eclipse.ecf.core.feature.feature.group" version="1.6.2.v20231021-2127"/>
-      <unit id="org.eclipse.ecf.core.ssl.feature.feature.group" version="1.1.501.v20230507-1921"/>
-      <unit id="org.eclipse.ecf.filetransfer.feature.feature.group" version="3.14.1900.v20230715-1945"/>
-      <unit id="org.eclipse.ecf.filetransfer.httpclient5.feature.feature.group" version="1.1.702.v20231114-1017"/>
-      <unit id="org.eclipse.ecf.filetransfer.ssl.feature.feature.group" version="1.1.402.v20231021-2127"/>
-      <unit id="org.eclipse.jdt.core.compiler.batch" version="3.38.0.v20240524-2033"/>
-      <unit id="org.eclipse.jdt.core" version="3.38.0.v20240528-0618"/>
-      <unit id="net.i2p.crypto.eddsa" version="0.3.0"/>
+      <unit id="org.eclipse.jgit.feature.group" version="7.1.0.202411261347-r"/>
+      <unit id="org.eclipse.jgit.gpg.bc.feature.group" version="7.1.0.202411261347-r"/>
+      <unit id="org.eclipse.jgit.ssh.jsch.feature.group" version="7.1.0.202411261347-r"/>
+      <unit id="org.eclipse.jgit.http.apache.feature.group" version="7.1.0.202411261347-r"/>
+      <unit id="org.eclipse.jgit.ssh.apache.feature.group" version="7.1.0.202411261347-r"/>
+      <unit id="org.eclipse.jgit.lfs.feature.group" version="7.1.0.202411261347-r"/>
+      <unit id="org.eclipse.egit.feature.group" version="7.1.0.202411261347-r"/>
+      <unit id="org.eclipse.egit.gitflow.feature.feature.group" version="7.1.0.202411261347-r"/>
+      <unit id="org.eclipse.emf.transaction.feature.group" version="1.14.1.202409160716"/>
+      <unit id="org.eclipse.emf.validation.feature.group" version="1.14.0.202408231629"/>
+      <unit id="org.eclipse.platform.ide" version="4.34.0.I20241120-1800"/>
+      <unit id="org.eclipse.equinox.p2.rcp.feature.feature.group" version="1.4.2600.v20241019-1812"/>
+      <unit id="org.eclipse.equinox.core.feature.feature.group" version="1.15.300.v20241030-2121"/>
+      <unit id="org.eclipse.equinox.p2.discovery.feature.feature.group" version="1.3.600.v20240918-1902"/>
+      <unit id="org.eclipse.equinox.executable.feature.group" version="3.8.2700.v20240929-1145"/>
+      <unit id="org.eclipse.ecf.core.ssl.feature.feature.group" version="1.1.600.v20240812-1535"/>
+      <unit id="org.eclipse.ecf.filetransfer.httpclient5.feature.feature.group" version="1.1.702.v20240808-1900"/>
+      <unit id="org.eclipse.ecf.filetransfer.ssl.feature.feature.group" version="1.1.402.v20240812-1535"/>
+      <unit id="org.eclipse.jdt.core.compiler.batch" version="3.40.0.v20241112-0530"/>
+      <unit id="org.eclipse.jdt.core" version="3.40.0.v20241118-1641"/>
       <unit id="org.apache.commons.io" version="2.8.0.v20210415-0900"/>
-      <unit id="org.apache.httpcomponents.httpcore" version="4.4.16.v20221207-1049"/>
-      <unit id="org.apache.httpcomponents.httpclient" version="4.5.14"/>
-      <unit id="org.apache.sshd.sftp" version="2.12.1"/>
-      <unit id="org.apache.sshd.osgi" version="2.12.1"/>
-      <unit id="org.apache.lucene.core" version="9.10.0.v20240221-0830"/>
-      <unit id="org.apache.lucene.analysis-common" version="9.10.0.v20240221-0830"/>
-      <unit id="org.apache.lucene.analysis-smartcn" version="9.10.0.v20240221-0830"/>
+      <unit id="org.apache.sshd.sftp" version="2.14.0"/>
+      <unit id="org.apache.sshd.osgi" version="2.14.0"/>
+      <unit id="org.apache.lucene.core" version="9.12.0.v20240929-0900"/>
+      <unit id="org.apache.lucene.analysis-common" version="9.12.0.v20240929-0900"/>
+      <unit id="org.apache.lucene.analysis-smartcn" version="9.12.0.v20240929-0900"/>
       <unit id="org.apache.aries.spifly.dynamic.bundle" version="1.3.7"/>
-      <unit id="org.apache.commons.jxpath" version="1.3.0.v200911051830"/>
-      <unit id="com.sun.jna" version="5.14.0.v20231211-1200"/>
-      <unit id="com.sun.jna.platform" version="5.14.0"/>
-      <unit id="jakarta.annotation-api" version="2.1.1"/>
-      <unit id="org.eclipse.jetty.http" version="12.0.9"/>
-      <unit id="org.eclipse.jetty.server" version="12.0.9"/>
-      <unit id="org.eclipse.jetty.session" version="12.0.9"/>
-      <unit id="org.eclipse.jetty.ee8.servlet" version="12.0.9"/>
-      <unit id="org.eclipse.jetty.ee8.security" version="12.0.9"/>
+      <unit id="com.sun.jna" version="5.15.0.v20240915-2000"/>
+      <unit id="com.sun.jna.platform" version="5.15.0"/>
+      <unit id="org.eclipse.jetty.http" version="12.0.15"/>
+      <unit id="org.eclipse.jetty.server" version="12.0.15"/>
+      <unit id="org.eclipse.jetty.session" version="12.0.15"/>
+      <unit id="org.eclipse.jetty.ee8.servlet" version="12.0.15"/>
+      <unit id="org.eclipse.jetty.ee8.security" version="12.0.15"/>
       <unit id="com.sun.el.javax.el" version="3.0.4"/>
-      <unit id="org.eclipse.search.core" version="3.16.200.v20240502-1134"/>
-      <unit id="org.objectweb.asm" version="9.7.0"/>
-      <unit id="org.objectweb.asm.commons" version="9.7.0"/>
-      <unit id="org.objectweb.asm.util" version="9.7.0"/>
-      <unit id="org.objectweb.asm.tree" version="9.7.0"/>
-      <unit id="org.objectweb.asm.tree.analysis" version="9.7.0"/>
+      <unit id="org.objectweb.asm.commons" version="9.7.1"/>
       <unit id="org.apache.commons.commons-codec" version="1.16.0"/>
-      <unit id="org.apache.commons.commons-compress" version="1.26.2"/>
-      <unit id="org.eclipse.tm4e.feature.feature.group" version="0.12.0.202405210827"/>
-      <unit id="org.eclipse.tm4e.language_pack.feature.feature.group" version="0.12.0.202405210827"/>
-      <unit id="org.eclipse.tm4e.languageconfiguration" version="0.12.0.202405210827"/>
+      <unit id="org.apache.commons.commons-compress" version="1.27.1"/>
+      <unit id="org.eclipse.tm4e.feature.feature.group" version="0.14.0.202410282056"/>
+      <unit id="org.eclipse.tm4e.language_pack.feature.feature.group" version="0.14.0.202410282056"/>
+      <unit id="org.eclipse.tm4e.languageconfiguration" version="0.14.0.202410282056"/>
       <unit id="org.jcodings" version="1.0.58.v20230703-0749"/>
       <unit id="org.joni" version="2.2.1.v20230703-0749"/>
-      <unit id="org.snakeyaml.engine" version="2.7.0"/>
-      <repository location="https://download.eclipse.org/releases/2024-06/"/>
-    </location>
-    <location includeMode="slicer" includeAllPlatforms="true" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
-      <unit id="com.google.guava" version="33.2.0.jre"/>
-      <unit id="com.google.gson" version="2.11.0"/>
-      <unit id="bcpg" version="1.78.1"/>
-      <unit id="bcpkix" version="1.78.1"/>
-      <unit id="bcprov" version="1.78.1"/>
-      <unit id="bcutil" version="1.78.1"/>
-      <unit id="com.googlecode.javaewah.JavaEWAH" version="1.2.3"/>
-      <unit id="org.apache.batik.css" version="1.17.0.v20231215-1130"/>
-      <unit id="org.apache.batik.util" version="1.17.0.v20231215-1130"/>
-      <unit id="org.apache.batik.constants" version="1.17.0.v20231215-1130"/>
-      <unit id="org.apache.batik.i18n" version="1.17.0.v20231215-1130"/>
-      <unit id="org.apache.commons.logging" version="1.2.0"/>
-      <unit id="com.ibm.icu" version="75.1.0"/>
-      <unit id="jakarta.inject.jakarta.inject-api" version="2.0.1"/>
-      <unit id="com.google.inject" version="7.0.0"/>
-      <repository location="https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/2024-06/"/>
+      <unit id="org.snakeyaml.engine" version="2.8.0"/>
+      <unit id="biz.aQute.bnd.util" version="0.0.0"/>
+      <unit id="biz.aQute.bndlib" version="0.0.0"/>
+      <unit id="org.apache.commons.jxpath" version="0.0.0"/>
+      <unit id="org.eclipse.sdk.ide" version="0.0.0"/>
+      <unit id="org.eclipse.ecf.core.feature.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.ecf.filetransfer.feature.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.emf.sdk.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.equinox.p2.director" version="0.0.0"/>
+      <unit id="org.eclipse.equinox.sdk.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.e4.tools.emf.ui" version="0.0.0"/>
+      <unit id="org.eclipse.e4.tools.services" version="0.0.0"/>
+      <unit id="org.eclipse.e4.ui.progress" version="0.0.0"/>
+      <unit id="org.eclipse.e4.ui.workbench" version="0.0.0"/>
+      <unit id="org.eclipse.search.core" version="0.0.0"/>
+      <unit id="org.osgi.service.repository" version="0.0.0"/>
+      <unit id="org.sat4j.core" version="0.0.0"/>
+      <unit id="org.sat4j.pb" version="0.0.0"/>
+      <unit id="org.eclipse.tools.layout.spy" version="0.0.0"/>
+      <repository location="https://download.eclipse.org/releases/2024-12/"/>
     </location>
     <location includeMode="slicer" includeAllPlatforms="true" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="javax.inject" version="1.0.0.v20220405-0441"/>
       <repository location="https://download.eclipse.org/tools/orbit/downloads/drops/R20230531010532/repository"/>
     </location>
-    <location includeDependencyDepth="infinite" includeDependencyScopes="compile" includeSource="true" missingManifest="generate" type="Maven" label="MavenDependencies">
+    <location includeMode="slicer" includeAllPlatforms="true" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="com.ibm.icu" version="76.1.0"/>
+      <unit id="com.jcraft.jsch" version="0.1.55.v20230916-1400"/>
+      <unit id="com.jcraft.jsch.source" version="0.1.55.v20230916-1400"/>
+      <unit id="com.jcraft.jzlib" version="1.1.3.v20230916-1400"/>
+      <unit id="com.jcraft.jzlib.source" version="1.1.3.v20230916-1400"/>
+      <unit id="jakarta.activation-api" version="2.1.3"/>
+      <unit id="jakarta.activation-api.source" version="2.1.3"/>
+      <unit id="jakarta.annotation-api" version="2.1.1"/>
+      <unit id="jakarta.annotation-api.source" version="2.1.1"/>
+      <unit id="jakarta.xml.bind-api" version="2.3.3"/>
+      <unit id="jakarta.xml.bind-api.source" version="2.3.3"/>
+      <unit id="jakarta.inject.jakarta.inject-api" version="2.0.1"/>
+      <unit id="jakarta.inject.jakarta.inject-api.source" version="2.0.1"/>
+      <unit id="net.i2p.crypto.eddsa" version="0.3.0"/>
+      <unit id="net.i2p.crypto.eddsa.source" version="0.3.0"/>
+      <unit id="org.apache.ant" version="1.10.15.v20240901-1000"/>
+      <unit id="org.apache.ant.source" version="1.10.15.v20240901-1000"/>
+      <unit id="org.apache.batik.constants" version="1.18.0.v20241009-1200"/>
+      <unit id="org.apache.batik.css" version="1.18.0.v20241009-1200"/>
+      <unit id="org.apache.batik.i18n" version="1.18.0.v20241009-1200"/>
+      <unit id="org.apache.batik.util" version="1.18.0.v20241009-1200"/>
+      <unit id="org.apache.commons.logging" version="1.2.0"/>
+      <unit id="org.apache.commons.logging.source" version="1.2.0"/>
+      <unit id="org.apache.httpcomponents.httpclient" version="4.5.14"/>
+      <unit id="org.apache.httpcomponents.httpclient.source" version="4.5.14"/>
+      <unit id="org.apache.httpcomponents.httpcore" version="4.4.16"/>
+      <unit id="org.apache.httpcomponents.httpcore.source" version="4.4.16"/>
+      <unit id="org.eclipse.jetty.servlet-api" version="4.0.6"/>
+      <unit id="org.eclipse.orbit.maven.lucene.feature.group" version="4.34.0.v20240929-0900"/>
+      <unit id="org.eclipse.orbit.xml-apis-ext" version="1.0.0.v20240917-0534"/>
+      <unit id="org.hamcrest" version="2.2.0"/>
+      <unit id="org.hamcrest.source" version="2.2.0"/>
+      <unit id="org.hamcrest.core" version="1.3.0.v20230809-1000"/>
+      <unit id="org.hamcrest.core.source" version="1.3.0.v20230809-1000"/>
+      <unit id="org.hamcrest.library" version="1.3.0.v20230809-1000"/>
+      <unit id="org.hamcrest.library.source" version="1.3.0.v20230809-1000"/>
+      <unit id="org.junit" version="4.13.2.v20240929-1000"/>
+      <unit id="org.junit.source" version="4.13.2.v20240929-1000"/>
+      <unit id="org.mortbay.jasper.apache-jsp" version="9.0.96"/>
+      <unit id="org.objenesis" version="3.4.0"/>
+      <unit id="org.objenesis.source" version="3.4.0"/>
+      <unit id="org.objectweb.asm" version="9.7.1"/>
+      <unit id="org.objectweb.asm.source" version="9.7.1"/>
+      <unit id="org.objectweb.asm.tree" version="9.7.1"/>
+      <unit id="org.objectweb.asm.tree.source" version="9.7.1"/>
+      <unit id="org.objectweb.asm.tree.analysis" version="9.7.1"/>
+      <unit id="org.objectweb.asm.tree.analysis.source" version="9.7.1"/>
+      <unit id="org.objectweb.asm.util" version="9.7.1"/>
+      <unit id="org.objectweb.asm.util.source" version="9.7.1"/>
+      <unit id="org.osgi.service.cm" version="1.6.1.202109301733"/>
+      <unit id="org.osgi.service.cm.source" version="1.6.1.202109301733"/>
+      <unit id="org.apache.commons.collections" version="3.2.2"/>
+      <unit id="org.jdom" version="1.1.3.v20230812-1600"/>
+      <unit id="org.osgi.service.http.whiteboard" version="1.1.1.202109301733"/>
+      <unit id="org.apache.xmlgraphics" version="2.10.0.v20241009-1200"/>
+      <repository location="https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/2024-12"/>
+    </location>
+    <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="error" type="Maven" label="osgi">
       <dependencies>
         <dependency>
           <groupId>org.osgi</groupId>
-          <artifactId>org.osgi.service.http.whiteboard</artifactId>
-          <version>1.1.0</version>
+          <artifactId>org.osgi.annotation.bundle</artifactId>
+          <version>2.0.0</version>
           <type>jar</type>
         </dependency>
         <dependency>
-          <groupId>org.eclipse.birt.runtime.3_7_1</groupId>
-          <artifactId>org.w3c.dom.svg</artifactId>
-          <version>1.1.0</version>
+          <groupId>org.osgi</groupId>
+          <artifactId>org.osgi.annotation.versioning</artifactId>
+          <version>1.1.2</version>
           <type>jar</type>
         </dependency>
         <dependency>
-          <groupId>org.eclipse.birt.runtime.3_7_1</groupId>
-          <artifactId>org.w3c.css.sac</artifactId>
-          <version>1.3.0</version>
+          <groupId>org.osgi</groupId>
+          <artifactId>org.osgi.service.component.annotations</artifactId>
+          <version>1.5.1</version>
           <type>jar</type>
         </dependency>
         <dependency>
-          <groupId>org.eclipse.birt.runtime</groupId>
-          <artifactId>org.w3c.dom.events</artifactId>
-          <version>3.0.0.draft20060413_v201105210656</version>
+          <groupId>org.osgi</groupId>
+          <artifactId>org.osgi.service.metatype.annotations</artifactId>
+          <version>1.4.1</version>
           <type>jar</type>
         </dependency>
+      </dependencies>
+    </location>
+    <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="error" type="Maven" label="xz">
+      <dependencies>
         <dependency>
-          <groupId>org.eclipse.birt.runtime.3_7_1</groupId>
-          <artifactId>org.w3c.dom.smil</artifactId>
-          <version>1.0.0</version>
+          <groupId>org.tukaani</groupId>
+          <artifactId>xz</artifactId>
+          <version>1.10</version>
           <type>jar</type>
         </dependency>
+      </dependencies>
+    </location>
+    <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="error" type="Maven" label="slf4j">
+      <dependencies>
         <dependency>
-          <groupId>commons-io</groupId>
-          <artifactId>commons-io</artifactId>
-          <version>1.4</version>
-          <type>jar</type>
-        </dependency>
-        <dependency>
-          <groupId>javax.servlet</groupId>
-          <artifactId>javax.servlet-api</artifactId>
-          <version>4.0.1</version>
-          <type>jar</type>
-        </dependency>
-        <dependency>
-          <groupId>org.glassfish.web</groupId>
-          <artifactId>javax.servlet.jsp</artifactId>
-          <version>2.3.4</version>
-          <type>jar</type>
-        </dependency>
-        <dependency>
-          <groupId>org.eclipse.jetty.ee8</groupId>
-          <artifactId>jetty-ee8-nested</artifactId>
-          <version>12.0.5</version>
-          <type>jar</type>
-        </dependency>
-        <dependency>
-          <groupId>org.mortbay.jasper</groupId>
-          <artifactId>apache-jsp</artifactId>
-          <version>9.0.83</version>
-          <type>jar</type>
-        </dependency>
-        <dependency>
-          <groupId>org.eclipse.jetty.ee8</groupId>
-          <artifactId>jetty-ee8-nested</artifactId>
-          <version>12.0.11</version>
+          <groupId>org.slf4j</groupId>
+          <artifactId>slf4j-api</artifactId>
+          <version>1.7.36</version>
           <type>jar</type>
         </dependency>
         <dependency>
           <groupId>org.slf4j</groupId>
           <artifactId>slf4j-simple</artifactId>
-          <version>2.1.0-alpha1</version>
+          <version>1.7.36</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+    </location>
+    <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="error" type="Maven" label="sshd">
+      <dependencies>
+        <dependency>
+          <groupId>org.apache.sshd</groupId>
+          <artifactId>sshd-osgi</artifactId>
+          <version>2.14.0</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.apache.sshd</groupId>
+          <artifactId>sshd-sftp</artifactId>
+          <version>2.14.0</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+    </location>
+    <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="error" type="Maven" label="mockito">
+      <dependencies>
+        <dependency>
+          <groupId>org.mockito</groupId>
+          <artifactId>mockito-core</artifactId>
+          <version>5.14.2</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+    </location>
+    <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="error" type="Maven" label="jna">
+      <dependencies>
+        <dependency>
+          <groupId>net.java.dev.jna</groupId>
+          <artifactId>jna</artifactId>
+          <version>5.15.0</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>net.java.dev.jna</groupId>
+          <artifactId>jna-platform</artifactId>
+          <version>5.15.0</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+    </location>
+    <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="error" type="Maven" label="jetty">
+      <dependencies>
+        <dependency>
+          <groupId>org.eclipse.jetty.ee10</groupId>
+          <artifactId>jetty-ee10-servlet</artifactId>
+          <version>12.0.16</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-http</artifactId>
+          <version>12.0.16</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-io</artifactId>
+          <version>12.0.16</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-security</artifactId>
+          <version>12.0.16</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-server</artifactId>
+          <version>12.0.16</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-session</artifactId>
+          <version>12.0.16</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-util</artifactId>
+          <version>12.0.16</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.eclipse.jetty</groupId>
+          <artifactId>jetty-util-ajax</artifactId>
+          <version>12.0.16</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>jakarta.servlet</groupId>
+          <artifactId>jakarta.servlet-api</artifactId>
+          <version>6.1.0</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.eclipse.jetty.ee8</groupId>
+          <artifactId>jetty-ee8-nested</artifactId>
+          <version>12.0.16</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+    </location>
+    <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="error" type="Maven" label="javaewah">
+      <dependencies>
+        <dependency>
+          <groupId>com.googlecode.javaewah</groupId>
+          <artifactId>JavaEWAH</artifactId>
+          <version>1.2.3</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+    </location>
+    <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="error" type="Maven" label="gson">
+      <dependencies>
+        <dependency>
+          <groupId>com.google.code.gson</groupId>
+          <artifactId>gson</artifactId>
+          <version>2.11.0</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+    </location>
+    <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="error" type="Maven" label="bytebuddy">
+      <dependencies>
+        <dependency>
+          <groupId>net.bytebuddy</groupId>
+          <artifactId>byte-buddy</artifactId>
+          <version>1.15.10</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>net.bytebuddy</groupId>
+          <artifactId>byte-buddy-agent</artifactId>
+          <version>1.15.10</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+    </location>
+    <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="error" type="Maven" label="bouncycastle">
+      <dependencies>
+        <dependency>
+          <groupId>org.bouncycastle</groupId>
+          <artifactId>bcpg-jdk18on</artifactId>
+          <version>1.79</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.bouncycastle</groupId>
+          <artifactId>bcprov-jdk18on</artifactId>
+          <version>1.79</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.bouncycastle</groupId>
+          <artifactId>bcpkix-jdk18on</artifactId>
+          <version>1.79</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.bouncycastle</groupId>
+          <artifactId>bcutil-jdk18on</artifactId>
+          <version>1.79</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+    </location>
+    <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="error" type="Maven" label="assertj">
+      <dependencies>
+        <dependency>
+          <groupId>org.assertj</groupId>
+          <artifactId>assertj-core</artifactId>
+          <version>3.26.3</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+    </location>
+    <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="error" type="Maven" label="args4j">
+      <dependencies>
+        <dependency>
+          <groupId>args4j</groupId>
+          <artifactId>args4j</artifactId>
+          <version>2.37</version>
+          <type>jar</type>
+        </dependency>
+      </dependencies>
+    </location>
+    <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="error" type="Maven" label="apache">
+      <dependencies>
+        <dependency>
+          <groupId>commons-codec</groupId>
+          <artifactId>commons-codec</artifactId>
+          <version>1.17.1</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-compress</artifactId>
+          <version>1.27.1</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.apache.commons</groupId>
+          <artifactId>commons-lang3</artifactId>
+          <version>3.17.0</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>commons-io</groupId>
+          <artifactId>commons-io</artifactId>
+          <version>2.17.0</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>commons-logging</groupId>
+          <artifactId>commons-logging</artifactId>
+          <version>1.3.4</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>commons-beanutils</groupId>
+          <artifactId>commons-beanutils</artifactId>
+          <version>1.9.4</version>
+          <type>jar</type>
+        </dependency>
+        <dependency>
+          <groupId>org.mortbay.jasper</groupId>
+          <artifactId>apache-el</artifactId>
+          <version>9.0.96</version>
           <type>jar</type>
         </dependency>
       </dependencies>

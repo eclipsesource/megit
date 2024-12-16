@@ -1,6 +1,6 @@
 target "MeGit Target"
 with allEnvironments source
-location "https://download.eclipse.org/releases/2024-06/" {
+location "https://download.eclipse.org/releases/2024-12/" {
 	org.eclipse.equinox.http.service.api
 	org.eclipse.jgit.feature.group
 	org.eclipse.jgit.gpg.bc.feature.group
@@ -10,48 +10,35 @@ location "https://download.eclipse.org/releases/2024-06/" {
 	org.eclipse.jgit.lfs.feature.group
 	org.eclipse.egit.feature.group
 	org.eclipse.egit.gitflow.feature.feature.group
-	org.eclipse.emf.sdk.feature.group
 	org.eclipse.emf.transaction.feature.group
 	org.eclipse.emf.validation.feature.group
 	org.eclipse.platform.ide
 	org.eclipse.equinox.p2.rcp.feature.feature.group
-	org.eclipse.equinox.sdk.feature.group
 	org.eclipse.equinox.core.feature.feature.group
 	org.eclipse.equinox.p2.discovery.feature.feature.group
 	org.eclipse.equinox.executable.feature.group
-	org.eclipse.ecf.core.feature.feature.group
 	org.eclipse.ecf.core.ssl.feature.feature.group
-	org.eclipse.ecf.filetransfer.feature.feature.group
 	org.eclipse.ecf.filetransfer.httpclient5.feature.feature.group
 	org.eclipse.ecf.filetransfer.ssl.feature.feature.group
 	org.eclipse.jdt.core.compiler.batch
 	org.eclipse.jdt.core
-	net.i2p.crypto.eddsa
 	org.apache.commons.io
-	org.apache.httpcomponents.httpcore
-	org.apache.httpcomponents.httpclient
 	org.apache.sshd.sftp
 	org.apache.sshd.osgi
 	org.apache.lucene.core
 	org.apache.lucene.analysis-common
 	org.apache.lucene.analysis-smartcn
 	org.apache.aries.spifly.dynamic.bundle
-	org.apache.commons.jxpath
 	com.sun.jna
 	com.sun.jna.platform
-	jakarta.annotation-api
 	org.eclipse.jetty.http
 	org.eclipse.jetty.server
 	org.eclipse.jetty.session
 	org.eclipse.jetty.ee8.servlet
 	org.eclipse.jetty.ee8.security
 	com.sun.el.javax.el
-	org.eclipse.search.core
-	org.objectweb.asm
 	org.objectweb.asm.commons
-	org.objectweb.asm.util
-	org.objectweb.asm.tree
-	org.objectweb.asm.tree.analysis
+	
 	org.apache.commons.commons-codec
 	org.apache.commons.commons-compress
 	org.eclipse.tm4e.feature.feature.group
@@ -60,89 +47,390 @@ location "https://download.eclipse.org/releases/2024-06/" {
 	org.jcodings
 	org.joni
 	org.snakeyaml.engine
-}
-location "https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/2024-06/" {
-	com.google.guava
-	com.google.gson
-	bcpg
-	bcpkix
-	bcprov
-	bcutil
-	com.googlecode.javaewah.JavaEWAH
-	org.apache.batik.css
-	org.apache.batik.util
-	org.apache.batik.constants
-	org.apache.batik.i18n
-	org.apache.commons.logging
-	com.ibm.icu
-	jakarta.inject.jakarta.inject-api
-	com.google.inject
+	
+	// https://gerrithub.io/plugins/gitiles/eclipse-egit/egit/+/refs/tags/v7.1.0.202411261347-r/org.eclipse.egit.target/releasetrain/4.34-2024-12.tpd
+	// Eclipse platform
+	biz.aQute.bnd.util lazy
+	biz.aQute.bndlib lazy
+	org.apache.commons.jxpath lazy
+	org.eclipse.sdk.ide lazy
+	org.eclipse.ecf.core.feature.feature.group lazy
+	org.eclipse.ecf.filetransfer.feature.feature.group lazy
+	org.eclipse.emf.sdk.feature.group lazy
+	org.eclipse.equinox.p2.director lazy
+	org.eclipse.equinox.sdk.feature.group lazy
+	org.eclipse.e4.tools.emf.ui lazy
+	org.eclipse.e4.tools.services lazy
+	org.eclipse.e4.ui.progress lazy
+	org.eclipse.e4.ui.workbench lazy
+	org.eclipse.search.core lazy
+	org.osgi.service.repository lazy
+	org.sat4j.core lazy
+	org.sat4j.pb lazy
+
+	// debugging SWT layouts
+	org.eclipse.tools.layout.spy lazy
 }
 
 location "https://download.eclipse.org/tools/orbit/downloads/drops/R20230531010532/repository" {
 	javax.inject
 }
 
-maven MavenDependencies scope=compile dependencyDepth=infinite missingManifest=generate includeSources {
+// https://gerrithub.io/plugins/gitiles/eclipse-egit/egit/+/refs/tags/v7.1.0.202411261347-r/org.eclipse.egit.target/orbit/orbit-4.34.tpd
+location "https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/2024-12" {
+	com.ibm.icu [76.1.0,76.1.0]
+	com.jcraft.jsch [0.1.55.v20230916-1400,0.1.55.v20230916-1400]
+	com.jcraft.jsch.source [0.1.55.v20230916-1400,0.1.55.v20230916-1400]
+	com.jcraft.jzlib [1.1.3.v20230916-1400,1.1.3.v20230916-1400]
+	com.jcraft.jzlib.source [1.1.3.v20230916-1400,1.1.3.v20230916-1400]
+	jakarta.activation-api [2.1.3,2.1.3]
+	jakarta.activation-api.source [2.1.3,2.1.3]
+	jakarta.annotation-api [2.1.1,2.1.1]
+	jakarta.annotation-api.source [2.1.1,2.1.1]
+	jakarta.xml.bind-api [2.3.3,2.3.3]
+	jakarta.xml.bind-api.source [2.3.3,2.3.3]
+	jakarta.inject.jakarta.inject-api  [2.0.1,2.0.1]
+	jakarta.inject.jakarta.inject-api.source [2.0.1,2.0.1]
+	net.i2p.crypto.eddsa [0.3.0,0.3.0]
+	net.i2p.crypto.eddsa.source [0.3.0,0.3.0]
+	org.apache.ant [1.10.15.v20240901-1000,1.10.15.v20240901-1000]
+	org.apache.ant.source [1.10.15.v20240901-1000,1.10.15.v20240901-1000]
+	org.apache.batik.constants [1.18.0.v20241009-1200,1.18.0.v20241009-1200]
+	org.apache.batik.css [1.18.0.v20241009-1200,1.18.0.v20241009-1200]
+	org.apache.batik.i18n [1.18.0.v20241009-1200,1.18.0.v20241009-1200]
+	org.apache.batik.util [1.18.0.v20241009-1200,1.18.0.v20241009-1200]
+	org.apache.commons.logging [1.2.0,1.2.0]
+	org.apache.commons.logging.source [1.2.0,1.2.0]
+	org.apache.httpcomponents.httpclient [4.5.14,4.5.14]
+	org.apache.httpcomponents.httpclient.source [4.5.14,4.5.14]
+	org.apache.httpcomponents.httpcore [4.4.16,4.4.16]
+	org.apache.httpcomponents.httpcore.source [4.4.16,4.4.16]
+	org.eclipse.jetty.servlet-api [4.0.6,4.0.6]
+	org.eclipse.orbit.maven.lucene.feature.group [4.34.0.v20240929-0900,4.34.0.v20240929-0900]
+	org.eclipse.orbit.xml-apis-ext [1.0.0.v20240917-0534,1.0.0.v20240917-0534]
+	org.hamcrest [2.2.0,2.2.0]
+	org.hamcrest.source [2.2.0,2.2.0]
+	org.hamcrest.core [1.3.0.v20230809-1000,1.3.0.v20230809-1000]
+	org.hamcrest.core.source [1.3.0.v20230809-1000,1.3.0.v20230809-1000]
+	org.hamcrest.library [1.3.0.v20230809-1000,1.3.0.v20230809-1000]
+	org.hamcrest.library.source [1.3.0.v20230809-1000,1.3.0.v20230809-1000]
+	org.junit [4.13.2.v20240929-1000,4.13.2.v20240929-1000]
+	org.junit.source [4.13.2.v20240929-1000,4.13.2.v20240929-1000]
+	org.mortbay.jasper.apache-jsp [9.0.96,9.0.96]
+	org.objenesis [3.4,3.4]
+	org.objenesis.source [3.4,3.4]
+	org.objectweb.asm [9.7.1, 9.7.1]
+	org.objectweb.asm.source [9.7.1, 9.7.1]
+	org.objectweb.asm.tree [9.7.1,9.7.1]
+	org.objectweb.asm.tree.source [9.7.1,9.7.1]
+	org.objectweb.asm.tree.analysis [9.7.1,9.7.1]
+	org.objectweb.asm.tree.analysis.source [9.7.1,9.7.1]
+	org.objectweb.asm.util [9.7.1,9.7.1]
+	org.objectweb.asm.util.source [9.7.1,9.7.1]
+	org.osgi.service.cm [1.6.1.202109301733,1.6.1.202109301733]
+	org.osgi.service.cm.source [1.6.1.202109301733,1.6.1.202109301733]
+	// additional dependencies I had to add
+	org.apache.commons.collections
+	org.jdom
+	org.osgi.service.http.whiteboard
+	org.apache.xmlgraphics
+}
+
+// https://gerrithub.io/plugins/gitiles/eclipse-egit/egit/+/refs/tags/v7.1.0.202411261347-r/org.eclipse.egit.target/maven/dependencies.tpd
+maven apache
+	scope = compile
+	dependencyDepth = none
+	missingManifest = error
+	includeSources
+{
 	dependency {
-		groupId="org.osgi"
-		artifactId="org.osgi.service.http.whiteboard"
-		version="1.1.0"
+		groupId = "commons-codec"
+		artifactId = "commons-codec"
+		version = "1.17.1"
 	}
 	dependency {
-		groupId="org.eclipse.birt.runtime.3_7_1"
-		artifactId="org.w3c.dom.svg"
-		version="1.1.0"
+		groupId = "org.apache.commons"
+		artifactId = "commons-compress"
+		version = "1.27.1"
 	}
 	dependency {
-		groupId="org.eclipse.birt.runtime.3_7_1"
-		artifactId="org.w3c.css.sac"
-		version="1.3.0"
+		groupId = "org.apache.commons"
+		artifactId = "commons-lang3"
+		version = "3.17.0"
 	}
 	dependency {
-		groupId="org.eclipse.birt.runtime"
-		artifactId="org.w3c.dom.events"
-		version="3.0.0.draft20060413_v201105210656"
+		groupId = "commons-io"
+		artifactId = "commons-io"
+		version = "2.17.0"
 	}
 	dependency {
-		groupId="org.eclipse.birt.runtime.3_7_1"
-		artifactId="org.w3c.dom.smil"
-		version="1.0.0"
+		groupId = "commons-logging"
+		artifactId = "commons-logging"
+		version = "1.3.4"
+	}
+	// additional dependencies I had to add
+	dependency {
+		groupId = "commons-beanutils"
+		artifactId = "commons-beanutils"
+		version = "1.9.4"
 	}
 	dependency {
-		groupId="commons-io"
-		artifactId="commons-io"
-		version="1.4"
-	}
-	dependency {
-		groupId="javax.servlet"
-		artifactId="javax.servlet-api"
-		version="4.0.1"
-	}
-	dependency {
-		groupId="org.glassfish.web"
-		artifactId="javax.servlet.jsp"
-		version="2.3.4"
-	}
-	dependency {
-		groupId="org.eclipse.jetty.ee8"
-		artifactId="jetty-ee8-nested"
-		version="12.0.5"
-	}
-	dependency {
-		groupId="org.mortbay.jasper"
-		artifactId="apache-jsp"
-		version="9.0.83"
-	}
-	dependency {
-		groupId="org.eclipse.jetty.ee8"
-		artifactId="jetty-ee8-nested"
-		version="12.0.11"
+		groupId = "org.mortbay.jasper"
+		artifactId = "apache-el"
+		version = "9.0.96"
 	}
 	
+}
+maven args4j
+	scope = compile
+	dependencyDepth = none
+	missingManifest = error
+	includeSources
+{
 	dependency {
-		groupId="org.slf4j"
-		artifactId="slf4j-simple"
-		version="2.1.0-alpha1"
+		groupId = "args4j"
+		artifactId = "args4j"
+		version = "2.37"
+	}
+}
+maven assertj
+	scope = compile
+	dependencyDepth = none
+	missingManifest = error
+	includeSources
+{
+	dependency {
+		groupId = "org.assertj"
+		artifactId = "assertj-core"
+		version = "3.26.3"
+	}
+}
+maven bouncycastle
+	scope = compile
+	dependencyDepth = none
+	missingManifest = error
+	includeSources
+{
+	dependency {
+		groupId = "org.bouncycastle"
+		artifactId = "bcpg-jdk18on"
+		version = "1.79"
+	}
+	dependency {
+		groupId = "org.bouncycastle"
+		artifactId = "bcprov-jdk18on"
+		version = "1.79"
+	}
+	dependency {
+		groupId = "org.bouncycastle"
+		artifactId = "bcpkix-jdk18on"
+		version = "1.79"
+	}
+	dependency {
+		groupId = "org.bouncycastle"
+		artifactId = "bcutil-jdk18on"
+		version = "1.79"
+	}
+}
+maven bytebuddy
+	scope = compile
+	dependencyDepth = none
+	missingManifest = error
+	includeSources
+{
+	dependency {
+		groupId = "net.bytebuddy"
+		artifactId = "byte-buddy"
+		version = "1.15.10"
+	}
+	dependency {
+		groupId = "net.bytebuddy"
+		artifactId = "byte-buddy-agent"
+		version = "1.15.10"
+	}
+}
+maven gson
+	scope = compile
+	dependencyDepth = none
+	missingManifest = error
+	includeSources
+{
+	dependency {
+		groupId = "com.google.code.gson"
+		artifactId = "gson"
+		version = "2.11.0"
+	}
+}
+maven javaewah
+	scope = compile
+	dependencyDepth = none
+	missingManifest = error
+	includeSources
+{
+	dependency {
+		groupId = "com.googlecode.javaewah"
+		artifactId = "JavaEWAH"
+		version = "1.2.3"
+	}
+}
+maven jetty
+	scope = compile
+	dependencyDepth = none
+	missingManifest = error
+	includeSources
+{
+	dependency {
+		groupId = "org.eclipse.jetty.ee10"
+		artifactId = "jetty-ee10-servlet"
+		version = "12.0.16"
+	}
+	dependency {
+		groupId = "org.eclipse.jetty"
+		artifactId = "jetty-http"
+		version = "12.0.16"
+	}
+	dependency {
+		groupId = "org.eclipse.jetty"
+		artifactId = "jetty-io"
+		version = "12.0.16"
+	}
+	dependency {
+		groupId = "org.eclipse.jetty"
+		artifactId = "jetty-security"
+		version = "12.0.16"
+	}
+	dependency {
+		groupId = "org.eclipse.jetty"
+		artifactId = "jetty-server"
+		version = "12.0.16"
+	}
+	dependency {
+		groupId = "org.eclipse.jetty"
+		artifactId = "jetty-session"
+		version = "12.0.16"
+	}
+	dependency {
+		groupId = "org.eclipse.jetty"
+		artifactId = "jetty-util"
+		version = "12.0.16"
+	}
+	dependency {
+		groupId = "org.eclipse.jetty"
+		artifactId = "jetty-util-ajax"
+		version = "12.0.16"
+	}
+	dependency {
+		groupId = "jakarta.servlet"
+		artifactId = "jakarta.servlet-api"
+		version = "6.1.0"
+	}
+	// additional dependencies
+	dependency {
+		groupId = "org.eclipse.jetty.ee8"
+		artifactId = "jetty-ee8-nested"
+		version = "12.0.16"
+	}
+}
+maven jna
+	scope = compile
+	dependencyDepth = none
+	missingManifest = error
+	includeSources
+{
+	dependency {
+		groupId = "net.java.dev.jna"
+		artifactId = "jna"
+		version = "5.15.0"
+	}
+	dependency {
+		groupId = "net.java.dev.jna"
+		artifactId = "jna-platform"
+		version = "5.15.0"
+	}
+}
+maven mockito
+	scope = compile
+	dependencyDepth = none
+	missingManifest = error
+	includeSources
+{
+	dependency {
+		groupId = "org.mockito"
+		artifactId = "mockito-core"
+		version = "5.14.2"
+	}
+}
+maven sshd
+	scope = compile
+	dependencyDepth = none
+	missingManifest = error
+	includeSources
+{
+	dependency {
+		groupId = "org.apache.sshd"
+		artifactId = "sshd-osgi"
+		version = "2.14.0"
+	}
+	dependency {
+		groupId = "org.apache.sshd"
+		artifactId = "sshd-sftp"
+		version = "2.14.0"
+	}
+}
+maven slf4j
+	scope = compile
+	dependencyDepth = none
+	missingManifest = error
+	includeSources
+{
+	dependency {
+		groupId = "org.slf4j"
+		artifactId = "slf4j-api"
+		version = "1.7.36"
+	}
+	dependency {
+		groupId = "org.slf4j"
+		artifactId = "slf4j-simple"
+		version = "1.7.36"
+	}
+}
+maven xz
+	scope = compile
+	dependencyDepth = none
+	missingManifest = error
+	includeSources
+{
+	dependency {
+		groupId = "org.tukaani"
+		artifactId = "xz"
+		version = "1.10"
+	}
+}
+// Needed by PDE, which we include when running the UI tests
+maven osgi
+	scope = compile
+	dependencyDepth = none
+	missingManifest = error
+	includeSources
+{
+	dependency {
+		groupId ="org.osgi"
+		artifactId="org.osgi.annotation.bundle"
+		version="2.0.0"
+	}
+	dependency {
+		groupId ="org.osgi"
+		artifactId="org.osgi.annotation.versioning"
+		version="1.1.2"
+	}
+	dependency {
+		groupId ="org.osgi"
+		artifactId="org.osgi.service.component.annotations"
+		version="1.5.1"
+	}
+	dependency {
+		groupId ="org.osgi"
+		artifactId="org.osgi.service.metatype.annotations"
+		version="1.4.1"
 	}
 }
