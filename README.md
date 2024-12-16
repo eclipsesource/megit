@@ -1,4 +1,4 @@
-# MeGit
+# MeGit &nbsp;&nbsp;&nbsp;[![Aim - Product](https://img.shields.io/badge/Aim-Product-brightgreen)](https://github.com/eclipsesource/.github/blob/main/repository-classification.md) [![Project - Feature Complete](https://img.shields.io/badge/Project-Complete-2e85a4)](https://github.com/eclipsesource/.github/blob/main/repository-classification.md) [![Java CI with Maven](https://github.com/eclipsesource/megit/actions/workflows/build.yml/badge.svg)](https://github.com/eclipsesource/megit/actions/workflows/build.yml)
 
 Looking for a powerful, yet easy-to-use, fully open-source user interface for git? Well, there are plenty of [options](https://git-scm.com/downloads/guis/). One of our favorites is [EGit](https://www.eclipse.org/egit/). However, EGit is actually a plug-in for Eclipse rather than a standalone tool, such as GitKraken, etc. Nevertheless, even in projects where we actually use other editors or IDEs than Eclipse, we often found ourselves firing up an Eclipse IDE with EGit just to handle more complex git branch operations, for analysing the git history, and so on.
 
