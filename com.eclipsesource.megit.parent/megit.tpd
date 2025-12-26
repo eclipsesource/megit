@@ -1,6 +1,6 @@
 target "MeGit Target"
-with allEnvironments source
-location "https://download.eclipse.org/releases/2025-06/" {
+with source requirements
+location "https://download.eclipse.org/releases/2025-12" {
 	org.eclipse.jgit.feature.group
 	org.eclipse.jgit.gpg.bc.feature.group
 	org.eclipse.jgit.ssh.jsch.feature.group
@@ -11,25 +11,21 @@ location "https://download.eclipse.org/releases/2025-06/" {
 	org.eclipse.egit.gitflow.feature.feature.group
 	org.eclipse.emf.transaction.feature.group
 	org.eclipse.emf.validation.feature.group
-	org.eclipse.platform.ide
+	
+	org.eclipse.platform.feature.group
 	org.eclipse.equinox.p2.rcp.feature.feature.group
 	org.eclipse.equinox.core.feature.feature.group
 	org.eclipse.equinox.p2.discovery.feature.feature.group
 	org.eclipse.equinox.executable.feature.group
-	org.osgi.service.http.whiteboard
-	org.eclipse.ecf.filetransfer.httpclient5.feature.feature.group
 	org.eclipse.jdt.core.compiler.batch
 	org.eclipse.jdt.core
-	org.apache.commons.io
 	org.apache.sshd.sftp
 	org.apache.sshd.osgi
-	org.apache.aries.spifly.dynamic.bundle
 	com.sun.jna
 	com.sun.jna.platform
 	org.eclipse.jetty.http
 	org.eclipse.jetty.server
 	org.eclipse.jetty.session
-	org.objectweb.asm.commons
 	
 	org.apache.commons.commons-codec
 	org.apache.commons.commons-compress
@@ -40,77 +36,85 @@ location "https://download.eclipse.org/releases/2025-06/" {
 	org.joni
 	org.snakeyaml.engine
 	
-	// https://github.com/eclipse-egit/egit/blob/v7.3.0.202506031305-r/org.eclipse.egit.target/releasetrain/4.36-2025-06.tpd
+	// https://github.com/eclipse-egit/egit/blob/v7.5.0.202512021534-r/org.eclipse.egit.target/releasetrain/4.38-2025-12.tpd
 	// Eclipse platform
-	// Eclipse platform
-	biz.aQute.bnd.util lazy
-	biz.aQute.bndlib lazy
+	biz.aQute.bnd.util 
+	biz.aQute.bndlib 
 	biz.aQute.repository
-	biz.aQute.resolve lazy
-	com.sun.el.javax.el lazy
-	javax.activation lazy
-	org.commonmark lazy
-	org.commonmark-gfm-tables lazy
-	org.eclipse.e4.tools.emf.ui lazy
-	org.eclipse.e4.tools.services lazy
-	org.eclipse.e4.ui.progress lazy
-	org.eclipse.e4.ui.workbench lazy
-	org.eclipse.ecf.core.feature.feature.group lazy
-	org.eclipse.ecf.filetransfer.feature.feature.group lazy
-	org.eclipse.emf.sdk.feature.group lazy
-	org.eclipse.equinox.http.service.api lazy
-	org.eclipse.equinox.http.servlet lazy
-	org.eclipse.equinox.p2.director lazy
-	org.eclipse.equinox.sdk.feature.group lazy
-	org.eclipse.jetty.ee8.security lazy
-	org.eclipse.jetty.ee8.server lazy
-	org.eclipse.jetty.ee8.servlet lazy
-	org.eclipse.sdk.ide lazy
-	org.eclipse.search.core lazy
-	org.eclipse.swt.tools.base lazy
-	org.osgi.service.repository lazy
-	org.sat4j.core lazy
-	org.sat4j.pb lazy
+	biz.aQute.resolve 
+	bndtools.jareditor 
+	com.sun.el.javax.el 
+	javax.activation 
+	org.bndtools.headless.build.manager 
+	org.bndtools.headless.build.plugin.gradle 
+	org.bndtools.templates.template 
+	org.bndtools.templating 
+	org.bndtools.versioncontrol.ignores.manager 
+	org.bndtools.versioncontrol.ignores.plugin.git 
+	org.commonmark 
+	org.eclipse.e4.tools.emf.ui 
+	org.eclipse.e4.tools.services 
+	org.eclipse.e4.ui.progress 
+	org.eclipse.e4.ui.workbench 
+	org.eclipse.ecf.core.feature.feature.group 
+	org.eclipse.ecf.filetransfer 
+	org.eclipse.emf.sdk.feature.group 
+	org.eclipse.equinox.http.service.api 
+	org.eclipse.equinox.http.servlet 
+	org.eclipse.equinox.p2.director 
+	org.eclipse.equinox.sdk.feature.group 
+	org.eclipse.jdt.core.manipulation 
+	org.eclipse.jdt.ui 
+	org.eclipse.jetty.ee8.security 
+	org.eclipse.jetty.ee8.server 
+	org.eclipse.jetty.ee8.servlet 
+	org.eclipse.pde.bnd.ui 
+	org.eclipse.pde.core 
+	org.eclipse.sdk.ide
+	org.eclipse.search.core
+	org.eclipse.swt.tools.base
+	org.osgi.service.http.whiteboard
+	org.osgi.service.repository
+	org.sat4j.core
+	org.sat4j.pb
 
 	// debugging SWT layouts
-	org.eclipse.tools.layout.spy lazy
+	org.eclipse.tools.layout.spy
 }
 
-location "https://download.eclipse.org/tools/orbit/downloads/drops/R20230531010532/repository" {
-	javax.inject
-}
-
-// https://github.com/eclipse-egit/egit/blob/v7.3.0.202506031305-r/org.eclipse.egit.target/orbit/orbit-4.36.tpd
-location "https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/2025-06" {
+// https://github.com/eclipse-egit/egit/blob/v7.5.0.202512021534-r/org.eclipse.egit.target/orbit/orbit-4.38.tpd
+location "https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/2025-12" {
 	aQute.libg [7.1.0.202411251545,7.1.0.202411251545]
 	bndtools.api [7.1.0.202411251545,7.1.0.202411251545]
-	com.ibm.icu [77.1.0,77.1.0]
+	com.ibm.icu [78.1.0,78.1.0]
 	com.jcraft.jsch [0.1.55.v20230916-1400,0.1.55.v20230916-1400]
 	com.jcraft.jsch.source [0.1.55.v20230916-1400,0.1.55.v20230916-1400]
 	com.jcraft.jzlib [1.1.3.v20230916-1400,1.1.3.v20230916-1400]
 	com.jcraft.jzlib.source [1.1.3.v20230916-1400,1.1.3.v20230916-1400]
-	com.github.weisj.jsvg [1.7.2,1.7.2]
-	jakarta.activation-api [2.1.3,2.1.3]
+	com.github.weisj.jsvg [2.0.0,2.0.0]
+	jakarta.activation-api [2.1.4,2.1.4]
 	jakarta.annotation-api [1.3.5,1.3.5]
 	jakarta.annotation-api [2.1.1,2.1.1]
 	jakarta.inject.jakarta.inject-api [1.0.5,1.0.5]
 	jakarta.inject.jakarta.inject-api  [2.0.1,2.0.1]
 	jakarta.xml.bind-api [2.3.3,2.3.3]
-	jakarta.xml.bind-api [4.0.2,4.0.2]
-	junit-jupiter-api [5.12.2,5.12.2]
-	junit-jupiter-engine [5.12.2,5.12.2]
-	junit-jupiter-migrationsupport [5.12.2,5.12.2]
-	junit-jupiter-params [5.12.2,5.12.2]
-	junit-platform-commons [1.12.2,1.12.2]
-	junit-platform-engine [1.12.2,1.12.2]
-	junit-platform-launcher [1.12.2,1.12.2]
-	junit-platform-runner [1.12.2,1.12.2]
-	junit-platform-suite-api [1.12.2,1.12.2]
-	junit-platform-suite-commons [1.12.2,1.12.2]
-	junit-platform-suite-engine [1.12.2,1.12.2]
-	junit-vintage-engine [5.12.2,5.12.2]
+	jakarta.xml.bind-api [4.0.4,4.0.4]
+	javax.servlet-api [3.1.0,3.1.0] 
+	junit-jupiter-api [5.14.1,5.14.1]
+	junit-jupiter-engine [5.14.1,5.14.1]
+	junit-jupiter-migrationsupport [5.14.1,5.14.1]
+	junit-jupiter-params [5.14.1,5.14.1]
+	junit-platform-commons [1.14.1,1.14.1]
+	junit-platform-engine [1.14.1,1.14.1]
+	junit-platform-launcher [1.14.1,1.14.1]
+	junit-platform-runner [1.14.1,1.14.1]
+	junit-platform-suite-api [1.14.1,1.14.1]
+	junit-platform-suite-commons [1.14.1,1.14.1]
+	junit-platform-suite-engine [1.14.1,1.14.1]
+	junit-vintage-engine [5.14.1,5.14.1]
 	org.apache.ant [1.10.15.v20240901-1000,1.10.15.v20240901-1000]
 	org.apache.ant.source [1.10.15.v20240901-1000,1.10.15.v20240901-1000]
+	org.apache.aries.spifly.dynamic.bundle [1.3.7,1.3.7]
 	org.apache.batik.constants [1.19.0.v20250506-1400,1.19.0.v20250506-1400]
 	org.apache.batik.css [1.19.0.v20250506-1400,1.19.0.v20250506-1400]
 	org.apache.batik.i18n [1.19.0.v20250506-1400,1.19.0.v20250506-1400]
@@ -122,30 +126,23 @@ location "https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/2025
 	org.apache.httpcomponents.httpcore [4.4.16,4.4.16]
 	org.apache.httpcomponents.httpcore.source [4.4.16,4.4.16]
 	org.apiguardian.api [1.1.2,1.1.2]
-	org.bndtools.headless.build.manager [7.1.0.202411251545,7.1.0.202411251545]
-	org.bndtools.templating [7.1.0.202411251545,7.1.0.202411251545]
-	org.bndtools.versioncontrol.ignores.manager [7.1.0.202411251545,7.1.0.202411251545]
-	org.mortbay.jasper.apache-el [9.0.102,9.0.102]
 	org.apache.xmlgraphics [2.11.0.v20250506-1400,2.11.0.v20250506-1400]
-	org.eclipse.jetty.servlet-api [4.0.6,4.0.6]
-	org.apache.lucene.analysis-common [10.2.1.v20250501-1000,10.2.1.v20250501-1000]
-	org.apache.lucene.analysis-smartcn [10.2.1.v20250501-1000,10.2.1.v20250501-1000]
-	org.apache.lucene.core [10.2.1.v20250501-1000,10.2.1.v20250501-1000]
+	org.apache.lucene.analysis-common [10.3.2.v20251117-1800,10.3.2.v20251117-1800]
+	org.apache.lucene.analysis-smartcn [10.3.2.v20251117-1800,10.3.2.v20251117-1800]
+	org.apache.lucene.core [10.3.2.v20251117-1800,10.3.2.v20251117-1800]
+	org.commonmark [0.27.0,0.27.0]
+	org.commonmark.ext-gfm-tables [0.27.0,0.27.0]
 	org.eclipse.orbit.xml-apis-ext [1.0.0.v20240917-0534,1.0.0.v20240917-0534]
-	org.hamcrest [2.2.0,2.2.0]
-	org.hamcrest.core [1.3.0.v20230809-1000,1.3.0.v20230809-1000]
-	org.hamcrest.core.source [1.3.0.v20230809-1000,1.3.0.v20230809-1000]
-	org.hamcrest.library [1.3.0.v20230809-1000,1.3.0.v20230809-1000]
-	org.hamcrest.library.source [1.3.0.v20230809-1000,1.3.0.v20230809-1000]
-	org.hamcrest.source [2.2.0,2.2.0]
+	org.hamcrest [3.0.0,3.0.0]
+	org.hamcrest.source [3.0.0,3.0.0]
 	org.junit [4.13.2.v20240929-1000,4.13.2.v20240929-1000]
 	org.junit.source [4.13.2.v20240929-1000,4.13.2.v20240929-1000]
-	org.mortbay.jasper.apache-jsp [9.0.102,9.0.192]
-	org.objectweb.asm [9.8.0, 9.8.0]
-	org.objectweb.asm.source [9.8.0, 9.8.0]
-	org.objectweb.asm.tree [9.8.0, 9.8.0]
-	org.objectweb.asm.tree.analysis [9.8.0, 9.8.0]
-	org.objectweb.asm.util [9.8.0, 9.8.0]
+	org.objectweb.asm [9.9.0, 9.9.0]
+	org.objectweb.asm.source [9.9.0, 9.9.0]
+	org.objectweb.asm.commons [9.9.0,9.9.0]
+	org.objectweb.asm.tree [9.9.0, 9.9.0]
+	org.objectweb.asm.tree.analysis [9.9.0, 9.9.0]
+	org.objectweb.asm.util [9.9.0, 9.9.0]
 	org.objenesis [3.4,3.4]
 	org.objenesis.source [3.4,3.4]
 	org.opentest4j [1.3.0,1.3.0]
@@ -156,7 +153,7 @@ location "https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/2025
 	org.osgi.service.cm.source [1.6.1.202109301733,1.6.1.202109301733]
 }
 
-// https://github.com/eclipse-egit/egit/blob/v7.3.0.202506031305-r/org.eclipse.egit.target/maven/dependencies.tpd
+// https://github.com/eclipse-egit/egit/blob/v7.5.0.202512021534-r/org.eclipse.egit.target/maven/dependencies.tpd
 maven apache
 	scope = compile
 	dependencyDepth = none
@@ -166,22 +163,22 @@ maven apache
 	dependency {
 		groupId = "commons-codec"
 		artifactId = "commons-codec"
-		version = "1.18.0"
+		version = "1.20.0"
 	}
 	dependency {
 		groupId = "org.apache.commons"
 		artifactId = "commons-compress"
-		version = "1.27.1"
+		version = "1.28.0"
 	}
 	dependency {
 		groupId = "org.apache.commons"
 		artifactId = "commons-lang3"
-		version = "3.17.0"
+		version = "3.20.0"
 	}
 	dependency {
 		groupId = "commons-io"
 		artifactId = "commons-io"
-		version = "2.19.0"
+		version = "2.21.0"
 	}
 	dependency {
 		groupId = "commons-logging"
@@ -212,7 +209,7 @@ maven assertj
 	dependency {
 		groupId = "org.assertj"
 		artifactId = "assertj-core"
-		version = "3.27.3"
+		version = "3.27.6"
 	}
 }
 
@@ -225,22 +222,22 @@ maven bouncycastle
 	dependency {
 		groupId = "org.bouncycastle"
 		artifactId = "bcpg-jdk18on"
-		version = "1.80"
+		version = "1.82"
 	}
 	dependency {
 		groupId = "org.bouncycastle"
 		artifactId = "bcprov-jdk18on"
-		version = "1.80"
+		version = "1.82"
 	}
 	dependency {
 		groupId = "org.bouncycastle"
 		artifactId = "bcpkix-jdk18on"
-		version = "1.80"
+		version = "1.82"
 	}
 	dependency {
 		groupId = "org.bouncycastle"
 		artifactId = "bcutil-jdk18on"
-		version = "1.80"
+		version = "1.82"
 	}
 }
 
@@ -253,12 +250,12 @@ maven bytebuddy
 	dependency {
 		groupId = "net.bytebuddy"
 		artifactId = "byte-buddy"
-		version = "1.17.5"
+		version = "1.18.1"
 	}
 	dependency {
 		groupId = "net.bytebuddy"
 		artifactId = "byte-buddy-agent"
-		version = "1.17.5"
+		version = "1.18.1"
 	}
 }
 
@@ -271,7 +268,7 @@ maven gson
 	dependency {
 		groupId = "com.google.code.gson"
 		artifactId = "gson"
-		version = "2.13.1"
+		version = "2.13.2"
 	}
 }
 
@@ -297,42 +294,42 @@ maven jetty
 	dependency {
 		groupId = "org.eclipse.jetty.ee10"
 		artifactId = "jetty-ee10-servlet"
-		version = "12.0.21"
+		version = "12.1.4"
 	}
 	dependency {
 		groupId = "org.eclipse.jetty"
 		artifactId = "jetty-http"
-		version = "12.0.21"
+		version = "12.1.4"
 	}
 	dependency {
 		groupId = "org.eclipse.jetty"
 		artifactId = "jetty-io"
-		version = "12.0.21"
+		version = "12.1.4"
 	}
 	dependency {
 		groupId = "org.eclipse.jetty"
 		artifactId = "jetty-security"
-		version = "12.0.21"
+		version = "12.1.4"
 	}
 	dependency {
 		groupId = "org.eclipse.jetty"
 		artifactId = "jetty-server"
-		version = "12.0.21"
+		version = "12.1.4"
 	}
 	dependency {
 		groupId = "org.eclipse.jetty"
 		artifactId = "jetty-session"
-		version = "12.0.21"
+		version = "12.1.4"
 	}
 	dependency {
 		groupId = "org.eclipse.jetty"
 		artifactId = "jetty-util"
-		version = "12.0.21"
+		version = "12.1.4"
 	}
 	dependency {
 		groupId = "org.eclipse.jetty"
 		artifactId = "jetty-util-ajax"
-		version = "12.0.21"
+		version = "12.1.4"
 	}
 	dependency {
 		groupId = "jakarta.servlet"
@@ -350,12 +347,12 @@ maven jna
 	dependency {
 		groupId = "net.java.dev.jna"
 		artifactId = "jna"
-		version = "5.17.0"
+		version = "5.18.1"
 	}
 	dependency {
 		groupId = "net.java.dev.jna"
 		artifactId = "jna-platform"
-		version = "5.17.0"
+		version = "5.18.1"
 	}
 }
 
@@ -368,7 +365,7 @@ maven mockito
 	dependency {
 		groupId = "org.mockito"
 		artifactId = "mockito-core"
-		version = "5.18.0"
+		version = "5.20.0"
 	}
 }
 
@@ -381,12 +378,12 @@ maven sshd
 	dependency {
 		groupId = "org.apache.sshd"
 		artifactId = "sshd-osgi"
-		version = "2.15.0"
+		version = "2.16.0"
 	}
 	dependency {
 		groupId = "org.apache.sshd"
 		artifactId = "sshd-sftp"
-		version = "2.15.0"
+		version = "2.16.0"
 	}
 }
 
@@ -399,12 +396,12 @@ maven slf4j
 	dependency {
 		groupId = "org.slf4j"
 		artifactId = "slf4j-api"
-		version = "1.7.36"
+		version = "2.0.17"
 	}
 	dependency {
 		groupId = "org.slf4j"
 		artifactId = "slf4j-simple"
-		version = "1.7.36"
+		version = "2.0.17"
 	}
 }
 
@@ -417,7 +414,7 @@ maven xz
 	dependency {
 		groupId = "org.tukaani"
 		artifactId = "xz"
-		version = "1.10"
+		version = "1.11"
 	}
 }
 
@@ -447,5 +444,22 @@ maven osgi
 		groupId ="org.osgi"
 		artifactId="org.osgi.service.metatype.annotations"
 		version="1.4.1"
+	}
+}
+
+// Extras
+location "https://download.eclipse.org/justj/jres/21/updates/release/latest" {
+  org.eclipse.justj.openjdk.hotspot.jre.full.feature.group
+}
+maven extras-megit
+	scope = compile
+	dependencyDepth = none
+	missingManifest = error
+	includeSources
+{
+	dependency {
+		groupId = "org.junit.platform"
+		artifactId = "junit-platform-commons"
+		version = "1.14.1"
 	}
 }
