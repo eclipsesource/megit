@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/eclipse-cbi/targetplatform-dsl -->
-<target name="MeGit Target" sequenceNumber="1766789774">
+<target name="MeGit Target" sequenceNumber="1772092922">
   <locations>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="org.eclipse.jgit.feature.group" version="7.5.0.202512021534-r"/>
@@ -149,7 +149,7 @@
       <repository location="https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/2025-12"/>
     </location>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
-      <unit id="org.eclipse.justj.openjdk.hotspot.jre.full.feature.group" version="21.0.9.v20251105-0741"/>
+      <unit id="org.eclipse.justj.openjdk.hotspot.jre.full.feature.group" version="21.0.10.v20260205-0638"/>
       <repository location="https://download.eclipse.org/justj/jres/21/updates/release/latest"/>
     </location>
     <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="error" type="Maven" label="extras-megit">
