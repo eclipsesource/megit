@@ -62,3 +62,4 @@ The runnable product will be available in `com.eclipsesource.megit.product/targe
   - Switches to Java 21
 - 0.9.0 Update to Eclipse EGit 2025-06
 - 0.10.0 Update to Eclipse EGit 2025-12
+- 0.11.0 Update to Eclipse EGit 2026-03
