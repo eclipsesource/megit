@@ -11,6 +11,10 @@
              name="appName"
              value="Minimal EGit">
        </property>
+       <property
+             name="aboutText"
+             value="MeGit is a minimal standalone application for Eclipse EGit. It packages the EGit user interface with only the dependencies needed to manage Git repositories outside the full Eclipse IDE.">
+       </property>
        <property                                                                                                                                                                                                                            
              name="applicationXMI"                                                                                                                                                                                                          
              value="com.eclipsesource.megit.plugin/LegacyIDE.e4xmi">                                                                                                                                                                                        
