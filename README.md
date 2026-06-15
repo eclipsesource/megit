@@ -45,7 +45,7 @@ The runnable product will be available in `com.eclipsesource.megit.product/targe
 - 0.0.1 Initial release based on Eclipse EGit 2020-12
 - 0.0.2 Based on Eclipse EGit 2020-12
   - Git perspective as default and dark theme by default (#7)
-  - Miminize editor area by default and fix of #8 (#9)
+  - Minimize editor area by default and fix of #8 (#9)
 - 0.0.3 Update to Eclipse EGit 2021-03
 - 0.0.4 Update to Eclipse EGit 2021-09
 - 0.1.0 Update to Eclipse EGit 2021-12
