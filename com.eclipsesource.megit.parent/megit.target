@@ -149,7 +149,7 @@
       <repository location="https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/2026-03"/>
     </location>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
-      <unit id="org.eclipse.justj.openjdk.hotspot.jre.full.feature.group" version="21.0.10.v20260205-0638"/>
+      <unit id="org.eclipse.justj.openjdk.hotspot.jre.full.feature.group" version="21.0.11.v20260515-1531"/>
       <repository location="https://download.eclipse.org/justj/jres/21/updates/release/latest"/>
     </location>
     <location includeDependencyDepth="none" includeDependencyScopes="compile" includeSource="true" missingManifest="error" type="Maven" label="extras-megit">
